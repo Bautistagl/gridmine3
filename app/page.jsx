@@ -6,6 +6,8 @@ import { useInView } from "react-intersection-observer";
 import Banner from "@/components/Banner";
 import CardsLanding from "@/components/CardsLanding";
 import Faqs from "@/components/Faqs";
+import Support from "@/components/Support";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [ref, inView] = useInView({
@@ -35,6 +37,8 @@ export default function Home() {
        <button> Get started now</button>
        <CardsLanding/>
        <Faqs/>
+       <Support/>
+       <Footer/>
     </div>
   );
 }

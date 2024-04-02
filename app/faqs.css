@@ -24,7 +24,7 @@
   }
   .contenedor-flex-only3{
     display: flex;
-    width: 90%;
+    width: 80vw;
     margin: auto;
     margin-top: 80px;
     margin-bottom: 15vh;

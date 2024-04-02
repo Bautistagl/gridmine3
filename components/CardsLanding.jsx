@@ -9,25 +9,25 @@ const CardsLanding = () => {
         <h1> It&apos;s easy, we make Bitcoing mining effortless</h1>
         <div style={{display:'flex'}}>
         <SingleCard
-        image='/calculator.png'
+        image='/calc.png'
         title='Precision Billing'
         subtitle='Only billed for your uptime. 
           Avg 98.2%+ Uptime.'
         />
           <SingleCard
-        image='/check2.png'
+        image='/shi.png'
         title='Precision Billing'
         subtitle='Only billed for your uptime. 
           Avg 98.2%+ Uptime.'
         />
           <SingleCard
-        image='/secure.png'
+        image='/sec.png'
         title='Precision Billing'
         subtitle='Only billed for your uptime. 
           Avg 98.2%+ Uptime.'
         />
           <SingleCard
-        image='/customer.png'
+        image='/sup2.png'
         title='Precision Billing'
         subtitle='Only billed for your uptime. 
           Avg 98.2%+ Uptime.'

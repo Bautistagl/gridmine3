@@ -3,9 +3,9 @@ import React from 'react'
 
 const SingleSupp = ({title,subtitle,button,image}) => {
   return (
-    <div>
+    <div className='singleSupp'>
         <Image alt='' src={image} height={40} width={40}/>
-        <div>
+        <div className='textos-supp'>
             <span>{title}</span>
             <p>{subtitle}</p>
         </div>

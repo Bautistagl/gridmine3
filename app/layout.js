@@ -5,6 +5,8 @@ import "./navbar.css"
 import "./banner.css"
 import "./faqs.css"
 import "./cardsLanding.css"
+import "./singleSupp.css"
+import "./footer.css"
 
 const inter = Inter({ subsets: ["latin"] });
 

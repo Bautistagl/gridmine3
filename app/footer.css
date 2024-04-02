@@ -1,0 +1,133 @@
+
+.fondo-footer{
+    background: #0c1317;
+    width: 100%;
+  }
+  
+  .container-footer{
+      display: flex;
+      flex-direction: column;
+      background: #0c1317;
+      
+      z-index: 0;
+      width: 80%;
+      
+      margin-right: auto !important;
+      margin-left: auto !important;
+      
+  }
+  li{
+    margin-left: 0px !important;
+    list-style: none;
+    padding: 10px 10px 10px 0px;
+    color: white;
+    cursor: pointer;
+  }
+  li:hover{
+    color: white;
+    font-weight: bold;
+    transition: ease-out 0.3s;
+  }
+  a{
+    text-decoration: none;
+    color: white ;
+    
+  }
+  .columnas {
+    color: white;
+    display: grid;
+    grid-template-columns: 40% auto auto auto auto;
+    margin-bottom: 4%;
+  }
+  ul{
+    all: initial;
+    font-family: rouben ligth;
+  }
+  .columna {
+   
+    justify-content: center;
+    align-items: center;
+    text-align: flex-start;
+    font-family: rouben;
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+  .columna-principal {
+   
+    justify-content: center;
+    align-items: center;
+    text-align: flex-start;
+    font-family: rouben;
+    font-size: 1.1rem;
+    grid-column: 1 / 2;
+    margin-left: 0px !important;
+    margin-top: 50px;
+   
+  }
+  
+  
+  .footer-parrafo{
+    padding: 10px 0px;
+    width: 320px;
+    color: whitead;
+  }
+  .redes-footer{
+    display: flex;
+    
+    
+  }
+  .icon-redes{
+    height: 25px;
+    margin: 10px 10px;
+  }
+  .boton-footer{
+    border-style: none;
+    border: 2px solid white;
+    display: flex;
+    margin-top: 5%;
+    height: 10%;
+    background: #0c1317;
+    color:white;
+    width: 100%;
+    border-radius: 3px;
+    font-family: rouben ligth ;
+    font-size: 0.9rem;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+   
+  }
+  
+  .footer-titulo-principal{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .licencias-footer{
+    
+    all: initial;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .contenedorFlex{
+    display: flex;
+   
+  }
+  .boton-contact-form{
+    display: flex;
+    background-color: #36B079;
+    width: 50%;
+    font-family: rouben ligth;
+    font-weight: lighter;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-top: 4%;
+   
+  
+  
+  }

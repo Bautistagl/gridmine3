@@ -1,0 +1,99 @@
+.singleSupp {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.72);
+    width: 80%;
+    height: 10vh;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-family: rouben;
+}
+
+.support-container{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.single-container{
+    width: 50%;
+    height: 320px;
+    
+}
+.support-form {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.766);
+    border-radius: 10px;
+    height: 290px;
+    margin: auto;
+}
+.singleSupp img{
+    margin: auto 10px;
+}
+
+.singleSupp button{
+   height: 50%;
+   margin: auto;
+   margin-right: 10px;
+   background-color: #36B079;
+}
+.textos-supp {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.textos-supp p {
+    color: rgba(0, 0, 0, 0.651);
+    margin: 5px;
+}
+
+.textos-supp span{
+    margin: 5px;
+}
+
+.inputs-container{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.inputs-support{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    font-family: rouben ligth;
+}
+.inputs-support input{
+    height: 30px;
+    background-color: rgb(238, 232, 232);
+    margin: 2px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.inputs-support label{
+    font-size: 0.9rem;
+    margin: 2px;
+    
+}
+::placeholder {
+    font-family: rouben ligth;
+   
+}
+.support-form textarea{
+    display: flex;
+    height: 15%;
+    width: 85%;
+    margin: auto;
+    background-color: rgb(238, 232, 232);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.support-form button{
+    display: flex;
+    background-color: #36B079;
+    margin-left: auto;
+    margin-top: 10%;
+}
