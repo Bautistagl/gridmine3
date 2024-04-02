@@ -22,7 +22,7 @@ const Faqs = () => {
 
             {selected === 1 ? (
           <div className="parrafo-features-landing">
-           It's simple. Purchase machines through us. We set them up, and you start earning Bitcoin. Each month you will prepay your electricity cost for your machines. That's it!
+           It&apos;s simple. Purchase machines through us. We set them up, and you start earning Bitcoin. Each month you will prepay your electricity cost for your machines. That&apos;s it!
           
           </div>
           
@@ -124,7 +124,7 @@ const Faqs = () => {
             <div className={selected === 6 ? 'linea-selected' : 'linea'}> </div>
             {selected === 6 ? (
           <div className="parrafo-features-landing">
-             We're able to service and repair machines, using original parts, materially reducing the downtime typically involved with repairs. Our certified, trained and dedicated repair technicians can promptly diagnose problems and make necessary repairs.
+             We&apos;re able to service and repair machines, using original parts, materially reducing the downtime typically involved with repairs. Our certified, trained and dedicated repair technicians can promptly diagnose problems and make necessary repairs.
        
           </div>
         ) : (

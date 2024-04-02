@@ -6,7 +6,7 @@ const CardsLanding = () => {
   return (
     <div className='cards-landing'>
         <p>WHY PICK GRID MINE?</p>
-        <h1> It's easy, we make Bitcoing mining effortless</h1>
+        <h1> It&apos;s easy, we make Bitcoing mining effortless</h1>
         <div style={{display:'flex'}}>
         <SingleCard
         image='/calculator.png'
