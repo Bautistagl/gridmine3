@@ -37,8 +37,7 @@ const Banner = ({ title, subtitle, imageSource, producto, buttonText1, buttonTex
           <div  className="tituloBanner"></div>
           <div className="subtituloBanner">{subtitle}</div>
         <div className="container-botones">
-          {/* <button className="boton-create-asic">{buttonText1}</button>
-          <button onClick={()=>{scrollToContactForm()}} className="boton-create-asic2">{buttonText2}</button> */}
+        
         </div>
       </div>
     

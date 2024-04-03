@@ -34,7 +34,12 @@ export default function Home() {
          style={inView ? fadeInStylesLeft : {}}
        src="/iluAsic.svg" alt="" className="ilustracion-bannerGrande" />
        </div>
-       <button> Get started now</button>
+       <button className="learn-more">
+  <span className="circle" aria-hidden="true">
+  <span className="icon arrow"></span>
+  </span>
+  <span className="button-text">GET STARTED</span>
+</button>
        <CardsLanding/>
        <Faqs/>
        <Support/>

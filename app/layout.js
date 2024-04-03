@@ -7,6 +7,7 @@ import "./faqs.css"
 import "./cardsLanding.css"
 import "./singleSupp.css"
 import "./footer.css"
+import "./contact/contact.css"
 
 const inter = Inter({ subsets: ["latin"] });
 
