@@ -206,7 +206,7 @@ datasets: [{
           )
         )}
 
-      <button onClick={()=>{fetchBitcoinData()}}> ver fechas</button>
+      {/* <button onClick={()=>{fetchBitcoinData()}}> ver fechas</button> */}
     
       <div className="chart">
 

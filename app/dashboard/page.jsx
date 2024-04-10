@@ -184,7 +184,7 @@ datasets: [{
           )
         )}
 
-      <button onClick={()=>{console.log(transactionDates)}}> ver fechas</button>
+      {/* <button onClick={()=>{console.log(transactionDates)}}> ver fechas</button> */}
       <div className="chart">
 
         

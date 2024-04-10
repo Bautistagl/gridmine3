@@ -1,7 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ContactBox from './ContactBox'
+import back from '@/axios';
+import Swal from 'sweetalert2';
 
 const ContactBanner = () => {
+
+    const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('')
+
+  const sendMail = async () => {
+    
+
+    const response = await fetch('/api/contactMail', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        subject:'dsadas',
+        message:'probando'
+      })
+    })
+    console.log(await response.json())
+  }
+    
   return (
     <div className='contact'>
         <div className='contact-container'>
@@ -31,7 +53,9 @@ const ContactBanner = () => {
             <span> We help our clients learn, explore, and mine Bitcoin.</span>
 
         </div>
-
+            <button onClick={()=>{sendMail()}}>
+                MASNDAR MAIL
+            </button>
     </div>
   )
 }
