@@ -1,94 +1,89 @@
 .circle1 {
-    width: 30px; /* Ajusta el tamaño según tus preferencias */
-    height: 30px; /* Ajusta el tamaño según tus preferencias */
-    border-radius: 100%;
-    border: 2px solid white;
-    background-color: rgb(221, 171, 107);
-    
-    cursor: pointer;
-  }
+  width: 30px; /* Ajusta el tamaño según tus preferencias */
+  height: 30px; /* Ajusta el tamaño según tus preferencias */
+  border-radius: 100%;
+  border: 2px solid white;
+  background-color: rgb(221, 171, 107);
 
-  .circle2 {
-    width: 30px; /* Ajusta el tamaño según tus preferencias */
-    height: 30px; /* Ajusta el tamaño según tus preferencias */
-    border-radius: 100%;
-    border: 2px solid white;
-    background-color: #83f9c3;
-  
-    cursor: pointer;
-  }
-  .title-contact-box{
-    display: flex;
-    
-    font-family: rouben ligth;
-
-  }
-  .title-contact-box div{
-    display: flex;
-    margin: auto 10px;
-    
-  }
-  .title-contact-box img{
-    display: flex;
-    margin: auto 10px;
-  }
-
-  .contact-box{
-    color: white;
-    width: 40%;
-    margin: auto;
-    margin-top: 50px;
-    height: 23vh;
-    border-top: 1px solid rgba(255, 255, 255, 0.593);
-    padding: 15px;
-    cursor: pointer;
-  }
-
-  .contact-box:hover{
-
-    background-color: rgba(255, 255, 255, 0.593);
-    
-  }
-  .contact-container{
-    width: 50%;
-    background:#0c1317d9 ;
-    padding: 20px;
-    border-radius: 10px;
-    justify-content: center;
-    border: 2px solid rgba(255, 255, 255, 0.593);
-   
-  }
-
-  .contact-text{
-    width: 40%;
-    margin: auto;
-    
-  }
-  .contact-text h1{
-    color: white;
-    font-family: rouben;
-    font-size: 3rem;
-  }
-  .contact-text span{
-    color: rgba(255, 255, 255, 0.714);
-  }
-  .contact{
-    display: flex;
-   
-    width: 80%;
-    margin: auto;
-  }
-.contact-container h3{
-    color: white;
-    font-size: 1.8rem;
-    justify-content: center;
-    text-align: center;
+  cursor: pointer;
 }
-.contact-container p{
-   
-    color: white;
-    justify-content: center;
-    text-align: center;
-    width: 50%;
-    margin: auto;
+
+.circle2 {
+  width: 30px; /* Ajusta el tamaño según tus preferencias */
+  height: 30px; /* Ajusta el tamaño según tus preferencias */
+  border-radius: 100%;
+  border: 2px solid white;
+  background-color: #83f9c3;
+
+  cursor: pointer;
+}
+.title-contact-box {
+  display: flex;
+
+  font-family: rouben ligth;
+}
+.title-contact-box div {
+  display: flex;
+  margin: auto 10px;
+}
+.title-contact-box img {
+  display: flex;
+  margin: auto 10px;
+}
+
+.contact-box {
+  color: white;
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+  height: 23vh;
+  border-top: 1px solid rgba(255, 255, 255, 0.593);
+  padding: 15px;
+  cursor: pointer;
+}
+
+.contact-box:hover {
+  background-color: rgba(255, 255, 255, 0.593);
+}
+.contact-container {
+  width: 50%;
+  background: #0c1317d9;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.593);
+}
+
+.contact-text {
+  width: 40%;
+  margin: auto;
+  margin-right: 0px;
+  margin-left: auto;
+}
+.contact-text h1 {
+  color: white;
+  font-family: rouben;
+  font-size: 3rem;
+}
+.contact-text span {
+  color: rgba(255, 255, 255, 0.714);
+}
+.contact {
+  display: flex;
+
+  width: 80%;
+  margin: auto;
+}
+.contact-container h3 {
+  color: white;
+  font-size: 1.8rem;
+  justify-content: center;
+  text-align: center;
+}
+.contact-container p {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }

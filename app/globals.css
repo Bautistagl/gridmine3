@@ -18,7 +18,6 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-
 }
 ul {
   padding: 0;
@@ -32,16 +31,16 @@ input:focus {
   border: none;
   /* Otros estilos que desees aplicar cuando el input está enfocado */
 }
-input{
+input {
   outline: none;
   border: none;
 }
-textarea{
+textarea {
   outline: none;
   border: none;
 }
 
-.login-form{
+.login-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,131 +48,126 @@ textarea{
   margin: auto;
 
   margin-top: 100px;
-  
 }
-.login-form span{
- color: rgba(255, 255, 255, 0.79);
- font-family: rouben ;
- margin-bottom: -10px;
- margin-top: 10px;
- font-size: 0.8rem;
- 
+.login-form span {
+  color: rgba(255, 255, 255, 0.79);
+  font-family: rouben;
+  margin-bottom: -10px;
+  margin-top: 10px;
+  font-size: 0.8rem;
 }
 .input-container {
- position: relative;
- color: black;
+  position: relative;
+  color: black;
 }
 
 .input-container img {
- position: absolute;
- right: 15px; 
- top: 34px; 
- cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 34px;
+  cursor: pointer;
 }
-.password-strength-bar{
- position: absolute;
- right: 100; 
- top: 100; 
- height: 5px;
+.password-strength-bar {
+  position: absolute;
+  right: 100;
+  top: 100;
+  height: 5px;
+}
+.contenedor-login {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.textos-login {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  justify-content: center;
 
+  margin-top: 50px;
+  width: 100%;
 }
-.contenedor-login{
- display: grid;
- grid-template-columns: 50% 50%;
- width: 80%;
- margin-left: auto;
- margin-right: auto;
+.doble-contenedor {
+  display: flex;
+  width: 26.5vw;
 }
-.textos-login{
- display: flex;
- flex-direction: column;
- margin-left: auto;
- justify-content: center;
-
- margin-top: 50px;
- width: 100%;
- 
+.textos-login h1 {
+  background: linear-gradient(225deg, #fff, #36b079);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: rouben;
+  font-size: 2.5rem;
+  width: 100%;
+  font-weight: bolder;
 }
-.doble-contenedor{
- display: flex;
- width: 26.5vw;
+.textos-login div {
+  color: white;
+  font-family: rouben;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
 }
-.textos-login h1{
- background: linear-gradient(225deg,#fff,#36B079);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- font-family: rouben;
- font-size: 2.5rem;
- width: 100%;
- font-weight: bolder;
-}
-.textos-login div{
- color: white;
- font-family: rouben;
- font-size: 2.5rem;
- font-weight: bolder;
- margin-bottom: 20px;
-}
-.textos-login span{
- color: rgba(255, 255, 255, 0.798);
- font-family: rouben;
- margin: 5px;
+.textos-login span {
+  color: rgba(255, 255, 255, 0.798);
+  font-family: rouben;
+  margin: 5px;
 }
 
-.login-title{
- display: flex;
- justify-content: center;
+.login-title {
+  display: flex;
+  justify-content: center;
   color: white;
   font-size: 1.5rem;
   font-family: rouben;
 }
-.login-input{
+.login-input {
   margin-top: 1%;
   height: 25px;
   width: 25vw;
   padding: 10px 10px;
- border-style: none;
+  border-style: none;
   border-radius: 5px;
 }
-.login-input-small{
- margin-top: 5%;
- margin-left: 10px;
- margin-right: 10px;
- height: 25px;
- width: 100%;
- padding: 10px 10px;
- border-style: none;
- border-radius: 5px;
+.login-input-small {
+  margin-top: 5%;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 25px;
+  width: 100%;
+  padding: 10px 10px;
+  border-style: none;
+  border-radius: 5px;
 }
-.login-icono{
- height: 20px;
+.login-icono {
+  height: 20px;
 }
 
-.github-login{
- display: flex;
- background-color: white;
- margin-top: 5%;
- height: 25px;
- width: 25vw;
- padding: 10px 10px;
- border-style: none;
- border-radius: 5px;
- font-family: rouben;
- font-size: 1rem;
- cursor: pointer;
-
+.github-login {
+  display: flex;
+  background-color: white;
+  margin-top: 5%;
+  height: 25px;
+  width: 25vw;
+  padding: 10px 10px;
+  border-style: none;
+  border-radius: 5px;
+  font-family: rouben;
+  font-size: 1rem;
+  cursor: pointer;
 }
-.github-login:hover{
- background-color: rgba(255, 255, 255, 0.934);
+.github-login:hover {
+  background-color: rgba(255, 255, 255, 0.934);
 }
-.github-login span{
- margin-left: 10px;
+.github-login span {
+  margin-left: 10px;
 }
-.login-submit{
- display: flex;
+.login-submit {
+  display: flex;
   color: white;
   margin-top: 13%;
-  background-color: #36B079;
+  background-color: #36b079;
   width: 26.5vw;
   justify-content: center;
   align-items: center;
@@ -185,47 +179,43 @@ textarea{
   cursor: pointer;
 }
 
-
-.member-login{
- text-align: center;
+.member-login {
+  text-align: center;
   width: 100%;
   margin-top: 5%;
   color: white;
   font-family: rouben;
 }
-.member2-login{
- font-size: 1rem !important;
-  color: #36B079 !important;
+.member2-login {
+  font-size: 1rem !important;
+  color: #36b079 !important;
   cursor: pointer;
 }
-.member2-login:hover{
+.member2-login:hover {
   color: #7ce2b4 !important;
-  
 }
 
-.login-redes{
+.login-redes {
   display: flex;
   flex: row;
   justify-content: center;
 }
-.logo-google-login{
+.logo-google-login {
   height: 30px;
   width: 30px;
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 20%;
- 
 }
-.logo-facebook-login{
+.logo-facebook-login {
   height: 35px;
   width: 35px;
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 8%;
- 
 }
 
-.a-redes-login{
+.a-redes-login {
   display: flex;
   background: white;
   border-radius: 5px;
@@ -233,8 +223,6 @@ textarea{
   height: 50px;
   margin-right: 20%;
   margin-left: 25%;
- 
-
 }
 .separator {
   width: 165px;
@@ -242,26 +230,24 @@ textarea{
   border: 0;
   border-top: 1px solid #ccc;
 }
-.login-separador{
+.login-separador {
   display: flex;
   width: 26.5vw;
 }
-.letra-separador{
+.letra-separador {
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 1.5%;
-  color:white ;
-  
-
+  color: white;
 }
-.container-dashboard{
-  background-image: url("../public/fondoFinal7.svg");
-    background-size: cover;
-    min-height: 100vh;
-    min-width: 100vw;
-    padding: 0;
+.container-dashboard {
+  background-image: url('../public/fondoFinal7.svg');
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
 }
-.metrics-container{
+.metrics-container {
   display: flex;
   flex-direction: column;
   margin-left: 350px;
@@ -271,14 +257,14 @@ a {
   text-decoration: none;
 }
 
-.chart{
+.chart {
   display: flex;
   flex-direction: column;
-  
+
   width: 60%;
 }
 
-.learn-more {
+.button {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -288,64 +274,57 @@ a {
   text-decoration: none;
   background: transparent;
   padding: 0;
-  font-size: inherit;
-  font-family: inherit;
-  background-color: transparent !important;
-  border-radius: 25px;
 
- }
- 
+  font-family: rouben;
+  letter-spacing: 1px;
+}
+
 .learn-more {
-  width: 15rem;
+  width: 12rem;
   height: auto;
- }
- 
- .learn-more .circle {
+}
+
+.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #ffffff;
+  background: white;
   border-radius: 1.625rem;
-  
- }
- 
- .learn-more .circle .icon {
+}
+
+.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
- }
- 
- .learn-more .circle .icon.arrow {
+}
+
+.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
-  color: #36B079;
-  background-color: #36B079;
- }
- 
- .learn-more:hover .circle .icon.arrow::before {
+  background: none;
+}
+
+.learn-more .circle .icon.arrow::before {
   position: absolute;
-  content: "";
+  content: '';
   top: -0.29rem;
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
-  color: #36B079;
-  background-color: #36B079;
+  border-top: 0.125rem solid #36b079;
+  border-right: 0.125rem solid #36b079;
   transform: rotate(45deg);
- 
- }
- 
- .learn-more .button-text {
+}
+
+.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -355,72 +334,70 @@ a {
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
   color: white;
-  font-weight: 700;
+
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
- 
- }
- 
- .learn-more:hover .circle {
+}
+
+.button:hover .circle {
   width: 100%;
- }
- 
- .learn-more:hover .circle .icon.arrow {
-  background: #fff;
+}
+
+.button:hover .circle .icon.arrow {
+  background: #36b079;
   transform: translate(1rem, 0);
- }
- 
- .learn-more:hover .button-text {
-  color: #36B079;
- }
+}
+
+.button:hover .button-text {
+  color: #36b079;
+}
 
 @media only screen and (max-width: 550px) {
- .contenedor-login{
+  .contenedor-login {
     display: flex;
     flex-direction: column;
     width: 90%;
- }
- .doble-contenedor{
+  }
+  .doble-contenedor {
     width: 90%;
- }
- .textos-login div{
+  }
+  .textos-login div {
     display: none;
- }
- .textos-login span{
+  }
+  .textos-login span {
     display: none;
- }
- .textos-login h1{
+  }
+  .textos-login h1 {
     display: flex;
     font-size: 1.5rem;
     justify-content: center;
- }
- .github-login{
+  }
+  .github-login {
     width: 90%;
- }
- .login-separador{
+  }
+  .login-separador {
     display: flex;
     width: 90%;
- }
- .login-title{
+  }
+  .login-title {
     display: flex;
     width: 100%;
     font-size: 1.2rem;
     justify-content: center;
     align-items: center;
- }
- .login-form{
+  }
+  .login-form {
     margin-top: 20px;
-}
-.login-submit{
- width: 86vw;
-}
-.login-input{
- width: 90%;
-}
-.member-login{
- width: 100%;
- margin-bottom: 20px;
-}
-
+  }
+  .login-submit {
+    width: 86vw;
+  }
+  .login-input {
+    width: 90%;
+  }
+  .member-login {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

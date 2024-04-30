@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
@@ -62,8 +62,6 @@ function Navbar({ scrollToContactForm }) {
             <div className="nav-title">
               <Link href="/pricing"> Pricing </Link>{' '}
             </div>
-           
-           
 
             <div className="nav-title">
               {' '}
@@ -85,15 +83,10 @@ function Navbar({ scrollToContactForm }) {
             <Link href="/login">
               <button className="boton-landing1">Login</button>
             </Link>
-            <Link href="register">
-              <button className="boton-landing">Register</button>
-            </Link>
           </div>
         </div>
       </nav>
       {menu ? <MenuMobile /> : ''}
-
-     
 
       <div
         className={`container-productos ${dropdown2 ? 'show' : ''} ${
@@ -107,7 +100,6 @@ function Navbar({ scrollToContactForm }) {
         <div className="productos">
           <img alt="" className="logo-productos" src={'/solution.png'} />
           <div className="descripcion-productos">
-          
             <span className="subtitulo-productos">
               {' '}
               Una descripcion un poco mas larga paraq ver{' '}
@@ -115,7 +107,6 @@ function Navbar({ scrollToContactForm }) {
           </div>
         </div>
 
-    
         <div className="productos">
           <img alt="" className="logo-productos" src={'/blog.png'} />
           <div className="descripcion-productos">

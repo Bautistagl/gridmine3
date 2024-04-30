@@ -1,0 +1,46 @@
+.facilities-items {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.facilities {
+  display: flex;
+  width: 80%;
+  font-family: rouben;
+  color: white;
+  margin-top: 150px;
+}
+.facilities-fotos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+}
+
+.facility-image {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #0c1317;
+}
+
+.facilities span {
+  display: flex;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.836);
+  font-size: 0.9rem;
+}
+.facilities-fotos img {
+  border-radius: 15px;
+  margin: 20px auto;
+}
