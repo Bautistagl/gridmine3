@@ -17,11 +17,13 @@ const ContactBanner = () => {
             circle="circle1"
             title="Discovery Call"
             text="Want to learn more about us? This short call with Jeronimo gives you time to let us know about your needs to see if our service is right for you."
+            link="cal.com/bautista-gonzalez-lazo-g8xn68/discovery-call"
           />
           <ContactBox
             circle="circle2"
             title="Sales Call"
             text="Ready to start mining Bitcoin? This call with Jeronimo gives you time to select your Bitcoin Miner, Electricity Plan, and more!"
+            link="/cal.com/bautista-gonzalez-lazo-g8xn68/sales-call"
           />
         </div>
       </div>
