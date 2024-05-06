@@ -2,13 +2,16 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import './dashboard/dashboard.css';
 import './navbar.css';
-import './banner.css';
-import './faqs.css';
-import './cardsLanding.css';
-import './singleSupp.css';
+import './hosting/hosting.css';
+import '../components/Banner/banner.css';
+import '../components/Faqs/faqs.css';
+import '../components/ContactLanding/cardsLanding.css';
+import '../components/ContactLanding/singleSupp.css';
 import './footer.css';
 import './contact/contact.css';
-import './facilities.css';
+import '../components/Facilities/facilities.css';
+import '../components/ShopLanding/shop.css';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {

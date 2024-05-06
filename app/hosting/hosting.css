@@ -1,0 +1,24 @@
+.box-hosting {
+  display: flex;
+  height: 150px;
+  width: 200px;
+  background-color: #0c1317;
+  border-radius: 5px;
+  font-family: rouben;
+}
+.box-hosting span {
+  display: flex;
+  color: white;
+  font-size: 2.5rem;
+  margin: auto;
+}
+.span-hosting {
+  color: white;
+  font-family: rouben;
+}
+.title-hosting {
+  display: flex;
+  color: white;
+  font-family: rouben;
+  margin-top: 150px;
+}

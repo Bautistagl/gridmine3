@@ -41,7 +41,6 @@ function Navbar({ scrollToContactForm }) {
             <img className="navbar-logo" src="/gridCorregido.png" />
           </Link>
           <div onClick={() => toggleMenu()} className="hamburguer-navbar">
-            {' '}
             {menu === false ? (
               <img className="hamburger-logo" src={'/menu.png'} />
             ) : (
@@ -55,27 +54,20 @@ function Navbar({ scrollToContactForm }) {
                 setDropdown(false);
               }}
               className="nav-title">
-              {' '}
               Why choose us?
               <img className="downNavbar" src="/downNavbar.png" alt="" />
             </div>
-            <div className="nav-title">
-              <Link href="/pricing"> Pricing </Link>{' '}
-            </div>
-
-            <div className="nav-title">
-              {' '}
-              <Link href="https://cal.com/bautista-gonzalez-lazo-g8xn68">
-                {' '}
-                Book a demo{' '}
-              </Link>{' '}
-            </div>
+            <Link href="/contact">
+              <div className="nav-title">Book a demo</div>
+            </Link>
+            <Link href="/hosting">
+              <div className="nav-title"> Hosting </div>
+            </Link>
             <div
               onClick={() => {
                 scrollToContactForm();
               }}
               className="nav-title">
-              {' '}
               Contact{' '}
             </div>
           </div>
@@ -101,7 +93,6 @@ function Navbar({ scrollToContactForm }) {
           <img alt="" className="logo-productos" src={'/solution.png'} />
           <div className="descripcion-productos">
             <span className="subtitulo-productos">
-              {' '}
               Una descripcion un poco mas larga paraq ver{' '}
             </span>
           </div>
@@ -114,7 +105,6 @@ function Navbar({ scrollToContactForm }) {
               <span className="titulo-productos">About us</span>
             </Link>
             <span className="subtitulo-productos">
-              {' '}
               Una descripcion un poco mas larga paraq ver{' '}
             </span>
           </div>

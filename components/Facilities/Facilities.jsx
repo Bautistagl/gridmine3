@@ -1,6 +1,7 @@
 import React from 'react';
 import FacilitiesItem from './FacilitiesItem';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Facilities = () => {
   return (
@@ -18,7 +19,7 @@ const Facilities = () => {
           <FacilitiesItem
             icon="/leaf2.png"
             title="Green Options"
-            info="Compass accommodates miners of all sizes, from 1 to 100,000 machines!"
+            info="Grid Mine offers a green Bitcoin Mining by flaring of surplus natural gas"
           />
           <FacilitiesItem
             icon="/supp2.png"
@@ -28,10 +29,20 @@ const Facilities = () => {
           <FacilitiesItem
             icon="/thunder2.png"
             title="Competitive Power"
-            info="Compass facilities provide the best power price available from comparable data centers"
+            info="Grid Mine provide the best power price available from comparable data centers"
           />
           <span> Interested in hosting with Grid Mine?</span>
           <p> Become a Grid Mine verified hosting facility </p>
+          <div className="button learn-more">
+            <span className="circle">
+              <span className="icon arrow"></span>
+            </span>
+            <Link href="/contact">
+              <span style={{ marginLeft: '60px' }} className="button-text">
+                Get started
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="facilities-fotos">

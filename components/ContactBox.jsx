@@ -10,7 +10,7 @@ const ContactBox = ({ circle, title, text, link }) => {
           <div className="title-contact-box">
             <div className={circle}> </div>
             <h2> {title}</h2>
-            <Image alt="" src="/arrow.png" height={25} width={25} />
+            <Image alt="" src="/arrow.png" height={15} width={15} />
           </div>
           <span>{text}</span>
         </a>

@@ -1,0 +1,32 @@
+.shop-container {
+  color: white;
+  font-family: rouben;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.shop-card {
+  border: 3px solid transparent;
+  margin: auto 10px;
+  border-radius: 15px;
+  background-color: #0c1317;
+  cursor: pointer;
+}
+.shop-card h3 {
+  display: flex;
+  color: #36b079;
+  text-align: center;
+  justify-content: center;
+}
+
+.shop-card:hover {
+  border: 3px solid #36b079;
+}
+/* .shop-card: {
+  border: 3px solid #36b079;
+} */
+.shop-container button {
+  margin-top: 50px;
+  background-color: #36b079;
+  border-radius: 15px;
+}

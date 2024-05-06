@@ -19,7 +19,7 @@
 }
 .title-contact-box {
   display: flex;
-
+  font-size: 0.8rem;
   font-family: rouben ligth;
 }
 .title-contact-box div {
@@ -43,15 +43,21 @@
 }
 
 .contact-box:hover {
-  background-color: rgba(255, 255, 255, 0.593);
+  background-color: rgba(255, 255, 255, 0.433);
+}
+.contact-box span {
+  font-size: 0.8rem;
 }
 .contact-container {
   width: 50%;
-  background: #0c1317d9;
+
   padding: 20px;
-  border-radius: 10px;
+
   justify-content: center;
   border: 2px solid rgba(255, 255, 255, 0.593);
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 2px solid grey;
+  border-radius: 20px;
 }
 
 .contact-text {
