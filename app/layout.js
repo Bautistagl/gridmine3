@@ -11,6 +11,7 @@ import './footer.css';
 import './contact/contact.css';
 import '../components/Facilities/facilities.css';
 import '../components/ShopLanding/shop.css';
+import '../components/ShopComponents/prodFeat.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

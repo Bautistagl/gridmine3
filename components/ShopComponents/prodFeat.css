@@ -1,0 +1,116 @@
+.prod-feat {
+  color: white;
+  margin: auto;
+  margin-left: 0px;
+}
+
+.product-card {
+  color: rgb(255, 255, 255);
+  font-family: rouben;
+  margin: auto;
+  margin-left: 0px;
+}
+.product-card h1 {
+  font-size: 2.5rem;
+}
+.product-card span {
+  display: flex;
+  width: 80%;
+}
+
+.productCard-container {
+  display: flex;
+  width: 80%;
+}
+
+.productCard-container img {
+  margin-top: 90px;
+}
+.productCard-container span {
+  color: rgba(255, 255, 255, 0.744);
+}
+
+.support-form2 textarea {
+  display: flex;
+  height: 35%;
+  width: 87.5%;
+  margin: auto;
+  background-color: rgba(238, 232, 232, 0.779);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.support-form2 button {
+  display: flex;
+  background-color: #36b079;
+  margin: auto;
+  margin-top: 30px;
+}
+.support-form2 {
+  width: 80vw;
+  border-radius: 10px;
+  height: 350px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.inputs-container2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  margin: auto;
+}
+.inputs-support2 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  font-family: rouben ligth;
+}
+.inputs-support2 input {
+  height: 30px;
+  background-color: rgba(238, 232, 232, 0.779);
+  margin: 2px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.inputs-support2 label {
+  font-size: 0.9rem;
+  margin: 2px;
+  color: white;
+}
+
+.title-contactProd {
+  color: white;
+  font-family: rouben;
+  font-size: 2.5rem;
+  margin-top: -50px;
+}
+.span-contactProd {
+  color: rgba(255, 255, 255, 0.779);
+  margin-bottom: 50px;
+}
+
+.schedule-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 70%;
+  height: 180px;
+  background-color: #0c1317;
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+.schedule-box h2 {
+  font-family: rouben;
+  color: white;
+  width: 70%;
+  margin: auto;
+  margin-left: 50px;
+}
+.schedule-box button {
+  display: flex;
+  margin: auto;
+  margin-right: 50px;
+  height: 45px;
+  background-color: #36b079;
+}
