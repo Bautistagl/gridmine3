@@ -54,7 +54,7 @@ function Navbar({ scrollToContactForm }) {
                 setDropdown(false);
               }}
               className="nav-title">
-              Why choose us?
+              Shop
               <img className="downNavbar" src="/downNavbar.png" alt="" />
             </div>
             <Link href="/contact">
@@ -92,6 +92,20 @@ function Navbar({ scrollToContactForm }) {
         <div className="productos">
           <img alt="" className="logo-productos" src={'/solution.png'} />
           <div className="descripcion-productos">
+            <Link href="/ant200">
+              <span className="titulo-productos">Antminer S21(200 TH)</span>
+            </Link>
+            <span className="subtitulo-productos">
+              Una descripcion un poco mas larga paraq ver{' '}
+            </span>
+          </div>
+        </div>
+        <div className="productos">
+          <img alt="" className="logo-productos" src={'/blog.png'} />
+          <div className="descripcion-productos">
+            <Link href="/ant195">
+              <span className="titulo-productos">Antminer S21(195 TH)</span>
+            </Link>
             <span className="subtitulo-productos">
               Una descripcion un poco mas larga paraq ver{' '}
             </span>
@@ -101,8 +115,21 @@ function Navbar({ scrollToContactForm }) {
         <div className="productos">
           <img alt="" className="logo-productos" src={'/blog.png'} />
           <div className="descripcion-productos">
-            <Link href="/aboutUs">
-              <span className="titulo-productos">About us</span>
+            <Link href="/ant188">
+              <span className="titulo-productos">Antminer S21(188 TH)</span>
+            </Link>
+            <span className="subtitulo-productos">
+              Una descripcion un poco mas larga paraq ver{' '}
+            </span>
+          </div>
+        </div>
+        <div className="productos">
+          <img alt="" className="logo-productos" src={'/blog.png'} />
+          <div className="descripcion-productos">
+            <Link href="/ant120">
+              <span className="titulo-productos">
+                Antminer S19k Pro (120 TH)
+              </span>
             </Link>
             <span className="subtitulo-productos">
               Una descripcion un poco mas larga paraq ver{' '}

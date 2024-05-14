@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Schedule = () => {
@@ -7,7 +8,11 @@ const Schedule = () => {
         {' '}
         Get a Proposal Including Hosting, Protection Plans, and Miner Options.
       </h2>
-      <button>Schedule Call</button>
+      <button>
+        <Link href="https://cal.com/bautista-gonzalez-lazo-g8xn68">
+          Schedule Call
+        </Link>
+      </button>
     </div>
   );
 };
