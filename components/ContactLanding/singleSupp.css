@@ -93,3 +93,47 @@
   height: 290px;
   margin: auto;
 }
+
+@media (max-width: 768px) {
+  .singleSupp {
+    width: 100%;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .singleSupp button {
+    margin: auto;
+    height: 40px;
+  }
+  .textos-supp {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .support-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .single-container {
+    margin: auto;
+    width: 90%;
+  }
+  .support-form {
+    margin-top: 230px;
+    width: 100%;
+  }
+  .inputs-container {
+    flex-direction: column;
+    width: 90%;
+  }
+  .inputs-support {
+    display: flex;
+    width: 100%;
+  }
+  .inputs-support input {
+    display: flex;
+    margin: auto !important;
+  }
+}

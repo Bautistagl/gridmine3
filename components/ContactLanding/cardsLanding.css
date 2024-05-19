@@ -2,7 +2,9 @@
   width: 80%;
   margin-bottom: 100px;
 }
-
+.cards-container {
+  display: flex;
+}
 .cards-landing h1 {
   color: white;
   text-align: center;
@@ -22,19 +24,13 @@
 .single-card {
   display: flex;
   flex-direction: column;
-  color: white;
-  font-size: 1.1rem;
-  height: 150px;
   width: 15%;
   font-family: rouben ligth;
   margin: auto;
   justify-content: center;
   text-align: center;
-
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 0.264);
-
-  /* background-color: #0c1317; */
   border-radius: 10px;
   padding: 20px;
 }
@@ -52,4 +48,18 @@
 .single-card span {
   color: rgba(255, 255, 255, 0.707);
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .single-card {
+    width: 60%;
+    margin-top: 20px;
+  }
+  .cards-landing h1 {
+    font-size: 2.5rem;
+  }
 }

@@ -8,7 +8,7 @@ const Shop = () => {
     <div className="shop-container">
       <h1>SHOP BY BRAND</h1>
       <Image alt="" src="/down.png" width={50} height={50} />
-      <div style={{ display: 'flex', marginTop: '100px' }}>
+      <div className="shop-cards">
         <ShopCard
           setProduct={setProduct}
           image="/antminer.webp"

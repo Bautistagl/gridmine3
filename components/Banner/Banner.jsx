@@ -37,7 +37,6 @@ const Banner = ({
   return (
     <div className="textosBanner">
       <div className="tituloBanner">{title}</div>
-      <div className="tituloBanner"></div>
       <div className="subtituloBanner">{subtitle}</div>
       <div className="container-botones"></div>
     </div>

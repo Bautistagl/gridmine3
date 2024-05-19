@@ -44,3 +44,47 @@
   border-radius: 15px;
   margin: 20px auto;
 }
+.container-facilities {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .facilities-items {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .facilities-fotos {
+    display: none;
+  }
+  .item-facility {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.264);
+    border-radius: 10px;
+  }
+  .item-facility span {
+    margin-bottom: 15px !important;
+  }
+  .container-facilities {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .facilities {
+    justify-content: center;
+  }
+  .facilities span {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .facility-image {
+    display: none;
+  }
+}

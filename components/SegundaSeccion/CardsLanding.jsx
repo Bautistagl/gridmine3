@@ -7,7 +7,7 @@ const CardsLanding = () => {
     <div className="cards-landing">
       <p>WHY PICK GRID MINE?</p>
       <h1> It&apos;s easy, we make Bitcoing mining effortless</h1>
-      <div style={{ display: 'flex' }}>
+      <div className="cards-container">
         <SingleCard
           image="/calc.png"
           title="Precision Billing"

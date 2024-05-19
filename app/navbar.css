@@ -243,7 +243,39 @@ button:active {
   display: none;
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-items.show {
+    display: flex;
+  }
+
+  .hamburguer-navbar {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.hamburguer-navbar {
+  display: none;
+}
+
+.menu-navbar {
+  display: none;
+}
+
+/* @media only screen and (max-width: 650px) {
   .categorias-mobile {
     display: grid;
     grid-template-columns: auto auto;
@@ -379,7 +411,7 @@ button:active {
   .nav-items {
     display: flex;
     flex-direction: row;
-    /* margin-top: 300px; */
+     margin-top: 300px; 
   }
   .un-contenedor {
     display: none;
@@ -494,8 +526,8 @@ button:active {
     margin-bottom: auto;
     margin-top: auto;
   }
-}
-@media only screen and (max-width: 400px) {
+} */
+/* @media only screen and (max-width: 400px) {
   .hamburguer-navbar {
     display: flex;
     justify-content: flex-end;
@@ -510,7 +542,8 @@ button:active {
     margin-left: 30px;
     margin-top: 3%;
   }
-}
+} */
+
 @media only screen and (max-width: 1300px) {
   .boton-landing1 {
     margin-left: 60%;

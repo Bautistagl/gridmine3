@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Facilities = () => {
   return (
     <div className="facilities">
-      <div style={{ width: '50%' }}>
+      <div className="container-facilities">
         <h1>The Worlds Best Mining Facilities</h1>
         <span>Available at the click of a button</span>
 
