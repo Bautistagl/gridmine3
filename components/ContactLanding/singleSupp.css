@@ -96,9 +96,9 @@
 
 @media (max-width: 768px) {
   .singleSupp {
-    width: 100%;
+    width: 60vw;
     flex-direction: column;
-    height: 25vh;
+    height: 35vh;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -118,7 +118,7 @@
   }
   .single-container {
     margin: auto;
-    width: 90%;
+    width: 100%;
   }
   .support-form {
     margin-top: 230px;
