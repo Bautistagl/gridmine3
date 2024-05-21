@@ -4,6 +4,7 @@ import styles from '.././page.module.css';
 import ProductCard from '@/components/ShopComponents/ProductCard';
 import ContactProd from '@/components/ShopComponents/ContactProd';
 import Schedule from '@/components/ShopComponents/Schedule';
+import Footer from '@/components/Footer';
 
 export default function Ant200() {
   return (
@@ -26,6 +27,7 @@ export default function Ant200() {
       </span>
       <ContactProd />
       <Schedule />
+      <Footer />
     </div>
   );
 }

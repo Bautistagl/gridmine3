@@ -28,6 +28,7 @@ export default function Ant120() {
       </span>
       <ContactProd />
       <Schedule />
+      <Footer />
     </div>
   );
 }

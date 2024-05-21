@@ -22,3 +22,18 @@
   font-family: rouben;
   margin-top: 150px;
 }
+
+@media (max-width: 768px) {
+  .title-hosting {
+    display: flex;
+    font-size: 2rem;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .box-hosting {
+    margin-bottom: 10px;
+  }
+}

@@ -98,7 +98,7 @@
   .singleSupp {
     width: 60vw;
     flex-direction: column;
-    height: 35vh;
+    height: 30vh;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -121,7 +121,7 @@
     width: 100%;
   }
   .support-form {
-    margin-top: 230px;
+    margin-top: 350px;
     width: 100%;
   }
   .inputs-container {

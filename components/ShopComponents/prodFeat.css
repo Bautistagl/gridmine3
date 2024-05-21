@@ -2,6 +2,7 @@
   color: white;
   margin: auto;
   margin-left: 0px;
+  text-align: center;
 }
 
 .product-card {
@@ -9,18 +10,24 @@
   font-family: rouben;
   margin: auto;
   margin-left: 0px;
+  text-align: center;
 }
 .product-card h1 {
   font-size: 2.5rem;
+  text-align: start;
 }
 .product-card span {
   display: flex;
   width: 80%;
+  margin: auto;
 }
 
 .productCard-container {
   display: flex;
-  width: 80%;
+  flex-direction: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
 }
 
 .productCard-container img {
@@ -28,6 +35,8 @@
 }
 .productCard-container span {
   color: rgba(255, 255, 255, 0.744);
+  margin-left: 0px;
+  text-align: start;
 }
 
 .support-form2 textarea {
@@ -65,7 +74,7 @@
   flex-direction: column;
   width: 80%;
   margin: auto;
-  font-family: rouben ligth;
+  font-family: rouben light;
 }
 .inputs-support2 input {
   height: 30px;
@@ -78,6 +87,7 @@
   font-size: 0.9rem;
   margin: 2px;
   color: white;
+  font-family: rouben;
 }
 
 .title-contactProd {
@@ -113,4 +123,98 @@
   margin-right: 50px;
   height: 45px;
   background-color: #36b079;
+}
+.feats-container {
+  display: flex;
+}
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .product-card h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .product-card {
+    margin-bottom: 100px;
+  }
+
+  .product-card,
+  .productCard-container,
+  .support-form2,
+  .inputs-container2,
+  .inputs-support2 {
+    width: 100%;
+  }
+  .productCard-container {
+    flex-direction: column;
+  }
+
+  .productCard-container img {
+    margin-top: 20px;
+    width: 100%;
+    height: 40vh;
+  }
+
+  .support-form2 textarea {
+    width: 95%;
+    height: 100px;
+  }
+
+  .inputs-container2 {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin-top: 30px;
+  }
+
+  .title-contactProd {
+    font-size: 2rem;
+  }
+
+  .schedule-box {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+    height: 30vh;
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+  }
+
+  .schedule-box h2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .schedule-box button {
+    margin: auto;
+  }
+  .prod-feat img {
+    height: 30px;
+    width: 30px;
+  }
+  .product-card span {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .prod-feat {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .feats-container {
+    width: 80%;
+    margin: auto;
+  }
+  .prod-feat h2 {
+    font-size: 1rem;
+  }
+  .span-contactProd {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .inputs-support2 input {
+    width: 90%;
+  }
 }

@@ -28,6 +28,7 @@ export default function Ant195() {
       </span>
       <ContactProd />
       <Schedule />
+      <Footer />
     </div>
   );
 }

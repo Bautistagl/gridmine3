@@ -21,7 +21,7 @@ const ProductCard = ({
       <div className="product-card">
         <h1>{title}</h1>
         <span>{description}</span>
-        <div style={{ display: 'flex' }}>
+        <div className="feats-container">
           <ProdFeat
             image="/neural.png"
             title={title2}

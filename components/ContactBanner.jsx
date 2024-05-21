@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ContactBox from './ContactBox';
-import back from '@/axios';
-import Swal from 'sweetalert2';
+import Footer from './Footer';
 
 const ContactBanner = () => {
   return (
     <div className="contact">
       <div className="contact-container">
-        <h3> Jeronimo Aguirre </h3>
+        <h3>Jeronimo Aguirre</h3>
         <p>
           Welcome to my scheduling page. Please follow the instructions to add
           an event to my calendar.
         </p>
-        <div style={{ display: 'flex' }}>
+        <div className="box-container">
           <ContactBox
             circle="circle1"
             title="Discovery Call"
@@ -29,8 +28,8 @@ const ContactBanner = () => {
       </div>
 
       <div className="contact-text">
-        <h1> Looking for hosting? Book a call with Jeronimo</h1>
-        <span> We help our clients learn, explore, and mine Bitcoin.</span>
+        <h1>Looking for hosting? Book a call with Jeronimo</h1>
+        <span>We help our clients learn, explore, and mine Bitcoin.</span>
       </div>
     </div>
   );

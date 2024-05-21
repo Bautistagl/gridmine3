@@ -1,31 +1,27 @@
-.circle1 {
-  width: 30px; /* Ajusta el tamaño según tus preferencias */
-  height: 30px; /* Ajusta el tamaño según tus preferencias */
-  border-radius: 100%;
-  border: 2px solid white;
-  background-color: rgb(221, 171, 107);
-
-  cursor: pointer;
-}
-
+.circle1,
 .circle2 {
   width: 30px; /* Ajusta el tamaño según tus preferencias */
   height: 30px; /* Ajusta el tamaño según tus preferencias */
   border-radius: 100%;
   border: 2px solid white;
-  background-color: #83f9c3;
-
   cursor: pointer;
 }
+
+.circle1 {
+  background-color: rgb(221, 171, 107);
+}
+
+.circle2 {
+  background-color: #83f9c3;
+}
+
 .title-contact-box {
   display: flex;
   font-size: 0.8rem;
   font-family: rouben ligth;
 }
-.title-contact-box div {
-  display: flex;
-  margin: auto 10px;
-}
+
+.title-contact-box div,
 .title-contact-box img {
   display: flex;
   margin: auto 10px;
@@ -45,14 +41,14 @@
 .contact-box:hover {
   background-color: rgba(255, 255, 255, 0.433);
 }
+
 .contact-box span {
   font-size: 0.8rem;
 }
+
 .contact-container {
   width: 50%;
-
   padding: 20px;
-
   justify-content: center;
   border: 2px solid rgba(255, 255, 255, 0.593);
   background-color: rgba(255, 255, 255, 0.07);
@@ -66,30 +62,93 @@
   margin-right: 0px;
   margin-left: auto;
 }
+
 .contact-text h1 {
   color: white;
   font-family: rouben;
   font-size: 3rem;
 }
+
 .contact-text span {
   color: rgba(255, 255, 255, 0.714);
 }
+
 .contact {
   display: flex;
-
   width: 80%;
   margin: auto;
 }
+
 .contact-container h3 {
   color: white;
   font-size: 1.8rem;
   justify-content: center;
   text-align: center;
 }
+
 .contact-container p {
   color: white;
   justify-content: center;
   text-align: center;
   width: 50%;
   margin: auto;
+}
+
+.box-container {
+  display: flex;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column-reverse; /* Cambia a columna en móviles con orden inverso */
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-container {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .contact-text {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .contact-text h1 {
+    font-size: 2rem;
+  }
+
+  .contact-text span {
+    font-size: 0.9rem;
+  }
+
+  .contact-container p {
+    width: 90%;
+  }
+
+  .contact-box {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .box-container {
+    flex-direction: column;
+  }
+
+  .title-contact-box {
+    font-size: 1rem;
+  }
+
+  .title-contact-box div,
+  .title-contact-box img {
+    margin: auto;
+  }
 }

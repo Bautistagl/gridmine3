@@ -8,7 +8,7 @@ const HostingCards = () => {
     <div className="cards-landing">
       <p>WHY MINE IN GRID MINE?</p>
       <h1> Grid Mine has many benefits for a Bitcoin Mining Operation.</h1>
-      <div style={{ display: 'flex' }}>
+      <div className="cards-container">
         <SingleCard
           image="/low-cost.png"
           title="Low Cost Of Power"

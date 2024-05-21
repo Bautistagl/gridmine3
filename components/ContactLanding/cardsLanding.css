@@ -55,11 +55,22 @@
     display: grid;
     grid-template-columns: auto auto;
   }
+
   .single-card {
-    width: 60%;
+    width: 25vw;
     margin-top: 20px;
+    height: 80%;
   }
   .cards-landing h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .single-card div {
+    display: flex;
+    font-size: 0.9rem;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }
