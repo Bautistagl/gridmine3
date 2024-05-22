@@ -13,7 +13,7 @@
   text-align: center;
 }
 .product-card h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: start;
 }
 .product-card span {
@@ -160,6 +160,30 @@
 .bitmain-info-table th {
   background-color: #f2f2f2;
   font-weight: bold;
+}
+@media (max-width: 1401px) {
+  .image-product {
+    width: 600px;
+    height: 600px;
+  }
+
+  .product-card h1 {
+    font-size: 2rem;
+  }
+  .prod-feat h2 {
+    font-size: 1.2rem;
+  }
+  .productCard-container span {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1101px) {
+  .product-card h1 {
+    width: 80%;
+  }
+  .productCard-container {
+    margin-top: 50px;
+  }
 }
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {

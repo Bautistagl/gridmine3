@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import ProductCard from '@/components/ShopComponents/ProductCard';
 import ContactProd from '@/components/ShopComponents/ContactProd';
 import Schedule from '@/components/ShopComponents/Schedule';
+import Specifications from '@/components/ShopComponents/Specifications';
 
 export default function Ant120() {
   return (
@@ -21,6 +22,7 @@ export default function Ant120() {
         title4="2760w"
         description4="Consumption"
       />
+      <Specifications />
       <h1 className="title-contactProd">Request Price</h1>
       <span className="span-contactProd">
         Reach out to us with this contact form and we will get back to you as

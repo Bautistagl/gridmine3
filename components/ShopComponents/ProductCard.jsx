@@ -17,7 +17,13 @@ const ProductCard = ({
 }) => {
   return (
     <div className="productCard-container">
-      <Image alt="" src="/iluAsic.svg" height={750} width={750} />
+      <Image
+        className="image-product"
+        alt=""
+        src="/iluAsic.svg"
+        height={750}
+        width={750}
+      />
       <div className="product-card">
         <h1>{title}</h1>
         <span>{description}</span>
