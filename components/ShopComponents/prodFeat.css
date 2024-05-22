@@ -127,6 +127,40 @@
 .feats-container {
   display: flex;
 }
+.bitmain-info-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 150px;
+}
+
+.bitmain-info-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bitmain-info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bitmain-info-table th,
+.bitmain-info-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.bitmain-info-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
   .product-card h1 {

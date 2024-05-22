@@ -12,18 +12,44 @@
   border: 3px solid transparent;
   margin: auto 10px;
   border-radius: 15px;
-  background-color: #0c1317;
+  background-color: white;
   cursor: pointer;
+  width: 15vw;
 }
 .shop-card h3 {
   display: flex;
-  color: #36b079;
+  color: #0c1317;
   text-align: center;
   justify-content: center;
+  font-weight: lighter;
+  font-size: 1rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.terahash {
+  display: flex;
+  color: #0c1317;
+  font-weight: lighter;
+  text-align: center;
+  justify-content: flex-start;
+  padding: 10px;
+  margin: auto;
+}
+.terahash span {
+  display: flex;
+  margin: auto;
+  margin-left: 5px;
+  font-size: 0.9rem;
 }
 
 .shop-card:hover {
-  border: 3px solid #36b079;
+  border: 2px solid #0c1317;
+}
+.shop-card button {
+  margin: auto;
+  margin-top: 0px !important;
+  margin-bottom: 10px;
 }
 /* .shop-card: {
   border: 3px solid #36b079;

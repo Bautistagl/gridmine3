@@ -1,36 +1,35 @@
 .banner-container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  height: 600px;
+  grid-template-columns: 1fr 1fr;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  align-items: center;
+  padding: 5vh 0;
+  margin-top: 100px;
 }
 
 .ilustracion-bannerGrande {
-  display: flex;
-  width: 45vw;
-
-  margin-top: 30%;
-  margin-bottom: auto;
-  margin-left: 20%;
+  height: 450px;
+  width: 750px;
+  margin: 0 auto;
+  margin-right: -10vw;
+  margin-top: 50px;
 }
 
 .textosBanner {
-  justify-content: center;
-  align-content: center;
-  margin-top: 20%;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .tituloBanner {
-  font-family: rouben;
+  font-family: 'Rouben', sans-serif;
   font-size: 3.5rem;
-  width: 100%;
   font-weight: bold;
-  margin-bottom: 3%;
+  margin-bottom: 1rem;
   color: white;
-  margin-top: 0%;
   background: linear-gradient(225deg, #fff 30%, #36b079 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -38,41 +37,51 @@
 
 .subtituloBanner {
   font-family: rouben ligth;
-  font-size: 20px;
-  width: 85%;
+  font-size: 1.25rem;
   color: white;
+}
+
+@media (max-width: 1450px) {
+  .tituloBanner {
+    font-size: 3rem;
+  }
+
+  .subtituloBanner {
+    font-size: 1rem;
+  }
+  .ilustracion-bannerGrande {
+    margin: 0 auto;
+    margin-right: -18vw;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .ilustracion-bannerGrande {
+    margin-right: -25vw;
+  }
 }
 
 @media (max-width: 768px) {
   .banner-container {
     grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .ilustracion-bannerGrande,
-  .textosBanner {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
+    width: 90%;
   }
 
   .tituloBanner {
     font-size: 2.5rem;
-    margin-top: 80px;
-    justify-content: center;
-    text-align: center;
+    margin-top: 20px;
   }
 
   .subtituloBanner {
-    margin: auto;
     font-size: 1rem;
   }
+
   .ilustracion-bannerGrande {
-    height: auto;
     display: flex;
-    width: auto;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    transform: none !important;
+    margin-top: -5px;
+    margin-left: 15%;
   }
 }
