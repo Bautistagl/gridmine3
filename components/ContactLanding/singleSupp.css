@@ -93,7 +93,11 @@
   height: 290px;
   margin: auto;
 }
-
+@media (max-width: 1250px) {
+  .singleSupp {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .singleSupp {
     width: 60vw;
