@@ -1,0 +1,23 @@
+.faqSection {
+  padding: 20px;
+  color: white;
+}
+
+.faqItem {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.answer {
+  padding: 10px 0;
+}
+
+.active .answer {
+  display: block;
+}

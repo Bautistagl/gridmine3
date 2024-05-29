@@ -33,11 +33,11 @@ function Navbar({ scrollToContactForm }) {
               Shop
               <img className="downNavbar" src="/downNavbar.png" alt="" />
             </div>
+            <Link href="/faqs">
+              <div className="nav-title">Preguntas Frecuentes</div>
+            </Link>
             <Link href="/contact">
               <div className="nav-title">Book a demo</div>
-            </Link>
-            <Link href="/hosting">
-              <div className="nav-title"> Hosting </div>
             </Link>
           </div>
           <div className="login-register">

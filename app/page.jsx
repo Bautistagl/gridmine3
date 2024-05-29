@@ -12,6 +12,7 @@ import React, { useRef } from 'react';
 import Facilities from '@/components/Facilities/Facilities';
 import Shop from '@/components/ShopLanding/Shop';
 import Link from 'next/link';
+import FloatingWhatsAppButton from '@/components/WppFijo';
 
 export default function Home() {
   const contactFormRef = useRef(null);
@@ -61,15 +62,16 @@ export default function Home() {
           <span className="icon arrow"></span>
         </span>
         <Link href="/contact">
-          <span className="button-text">Get started</span>
+          <span className="button-text">Comenza</span>
         </Link>
       </div>
-      <CardsLanding />
+      {/* <CardsLanding />
+      <Facilities /> */}
       <Shop />
-      <Facilities />
       <Faqs />
       <ContactForm1 ref={contactFormRef} />
       <Footer />
+      <FloatingWhatsAppButton message="Hola, queria consultar sobre los mineros" />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import ProductCard from '@/components/ShopComponents/ProductCard';
 import ContactProd from '@/components/ShopComponents/ContactProd';
 import Schedule from '@/components/ShopComponents/Schedule';
 import Specifications from '@/components/ShopComponents/Specifications';
+import WhatsAppButton from '@/components/BotonWpp';
 
 export default function Ant120() {
   return (
@@ -22,6 +23,7 @@ export default function Ant120() {
         title4="2760w"
         description4="Consumption"
       />
+      <WhatsAppButton message="Hola, estoy interesado en el Antminer T21 (120 Th/s)." />
       <Specifications />
       <h1 className="title-contactProd">Request Price</h1>
       <span className="span-contactProd">

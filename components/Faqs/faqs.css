@@ -107,6 +107,60 @@
   display: flex;
   margin: auto;
 }
+.faqSectionContainer {
+  display: flex;
+  margin-top: 100px;
+}
+
+.faqButtons {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faqButtons button {
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.faqSection {
+  flex-grow: 1;
+  width: 70vw;
+}
+.faqSection h1 {
+  text-align: center;
+  font-size: 42px;
+}
+
+.faqItem {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.answer {
+  padding: 10px 0;
+}
+
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  background-image: url('../../public/fondoFinal7.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+}
 
 @media (max-width: 768px) {
   .button-landing2 {

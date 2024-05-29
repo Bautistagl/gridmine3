@@ -13,6 +13,7 @@ import '../components/Facilities/facilities.css';
 import '../components/ShopLanding/shop.css';
 import '../components/ShopComponents/prodFeat.css';
 import '../components/Dashboard/dashboard.css';
+import './faqs/faqs.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -6,6 +6,7 @@ import ContactProd from '@/components/ShopComponents/ContactProd';
 import Schedule from '@/components/ShopComponents/Schedule';
 import Footer from '@/components/Footer';
 import Specifications from '@/components/ShopComponents/Specifications';
+import WhatsAppButton from '@/components/BotonWpp';
 
 export default function Ant200() {
   return (
@@ -21,6 +22,7 @@ export default function Ant200() {
         title4="3500w"
         description4="Consumption"
       />
+      <WhatsAppButton message="Hola, estoy interesado en el Antminer S19k Pro (120 Th/s)." />
       <Specifications />
       <h1 className="title-contactProd">Request Price</h1>
       <span className="span-contactProd">

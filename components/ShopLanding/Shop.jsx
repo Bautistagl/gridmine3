@@ -23,6 +23,13 @@ const Shop = () => {
           terahash="230 Th/s"
           link="antS19K"
         />
+        <ShopCard
+          setProduct={setProduct}
+          image="/productoShop.webp"
+          title="Bitmain Antminer S21 BTC Miner "
+          terahash="195 Th/s"
+          link="antS21"
+        />
       </div>
     </div>
   );
