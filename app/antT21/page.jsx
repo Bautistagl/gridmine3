@@ -14,11 +14,11 @@ export default function Ant120() {
     <div className={styles.main}>
       <Navbar />
       <ProductCard
-        title="Antminer T21 BTC Miner (120 TH)"
+        title="Antminer T21 BTC Miner (190 TH)"
         description="Antminer S19k Pro is an SHA-256 algorithm mining equipment manufactured by Bitmain. It is able to mine Bitcoin with a maximum hashrate of 120TH/s with a power consumption of 2760W."
         title2="SHA-256"
         description2="Algorithm"
-        title3="120 TH/s"
+        title3="190 TH/s"
         description3="Hashrate"
         title4="2760w"
         description4="Consumption"

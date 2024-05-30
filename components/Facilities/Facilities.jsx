@@ -39,7 +39,7 @@ const Facilities = () => {
             </span>
             <Link href="/contact">
               <span style={{ marginLeft: '60px' }} className="button-text">
-                Get started
+                COMENZA
               </span>
             </Link>
           </div>

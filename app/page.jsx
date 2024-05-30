@@ -65,9 +65,9 @@ export default function Home() {
           <span className="button-text">Comenza</span>
         </Link>
       </div>
-      {/* <CardsLanding />
-      <Facilities /> */}
       <Shop />
+      <CardsLanding />
+      <Facilities />
       <Faqs />
       <ContactForm1 ref={contactFormRef} />
       <Footer />

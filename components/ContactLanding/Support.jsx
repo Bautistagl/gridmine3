@@ -33,9 +33,9 @@ const Support = () => {
           image="/live-chat.png"
         />
         <SingleSupp
-          title="Telegram"
+          title="Whatsapp"
           subtitle="Talk to our experts"
-          button="+54113094394"
+          button="+54 9 11 2244‑2179"
           image="/live-chat.png"
         />
       </div>

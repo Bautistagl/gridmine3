@@ -20,7 +20,7 @@ const Shop = () => {
           setProduct={setProduct}
           image="/productoShop.webp"
           title="Bitmain Antminer S19K Pro Bitcoin Miner"
-          terahash="230 Th/s"
+          terahash="120 Th/s"
           link="antS19K"
         />
         <ShopCard
