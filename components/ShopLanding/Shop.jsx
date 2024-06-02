@@ -11,7 +11,7 @@ const Shop = () => {
       <div className="shop-cards">
         <ShopCard
           setProduct={setProduct}
-          image="/productoShop2.webp"
+          image="/ProductoShop2.webp"
           title="Bitmain Antminer T21 Bitcoin Miner"
           terahash="190 Th/s"
           link="antT21"
@@ -19,7 +19,7 @@ const Shop = () => {
         />
         <ShopCard
           setProduct={setProduct}
-          image="/productoShop.webp"
+          image="/ProductoShop.webp"
           title="Bitmain Antminer S19K Pro Bitcoin Miner"
           terahash="120 Th/s"
           link="antS19K"
@@ -27,7 +27,7 @@ const Shop = () => {
         />
         <ShopCard
           setProduct={setProduct}
-          image="/productoShop.webp"
+          image="/ProductoShop.webp"
           title="Bitmain Antminer S21 BTC Miner "
           terahash="195 Th/s"
           link="antS21"
