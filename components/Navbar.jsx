@@ -22,7 +22,7 @@ function Navbar({ scrollToContactForm }) {
       <nav className={`navbar ${isSticky ? 'sticky' : ''}  `}>
         <div className="nav-items">
           <Link href="/">
-            <img className="navbar-logo" src="/gridCorregido.png" />
+            <img className="navbar-logo" src="/gridMineBlanco.svg" />
           </Link>
           <div className="un-contenedor">
             <div
@@ -60,10 +60,9 @@ function Navbar({ scrollToContactForm }) {
         }}
         onMouseLeave={() => setDropdown2(false)}>
         <div className="productos">
-          <img alt="" className="logo-productos" src={'/solution.png'} />
           <div className="descripcion-productos">
             <Link href="/antT21">
-              <span className="titulo-productos">Antminer T21(200 TH)</span>
+              <span className="titulo-productos">Antminer T21(190 TH)</span>
             </Link>
             <span className="subtitulo-productos">
               Una descripcion un poco mas larga paraq ver{' '}
@@ -71,10 +70,19 @@ function Navbar({ scrollToContactForm }) {
           </div>
         </div>
         <div className="productos">
-          <img alt="" className="logo-productos" src={'/blog.png'} />
           <div className="descripcion-productos">
             <Link href="/antS19K">
-              <span className="titulo-productos">Antminer S19K(195 TH)</span>
+              <span className="titulo-productos">Antminer S19K(120 TH)</span>
+            </Link>
+            <span className="subtitulo-productos">
+              Una descripcion un poco mas larga paraq ver{' '}
+            </span>
+          </div>
+        </div>
+        <div className="productos">
+          <div className="descripcion-productos">
+            <Link href="/antS19K">
+              <span className="titulo-productos">Antminer S21(195 TH)</span>
             </Link>
             <span className="subtitulo-productos">
               Una descripcion un poco mas larga paraq ver{' '}

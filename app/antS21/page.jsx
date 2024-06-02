@@ -15,12 +15,12 @@ export default function Ant195() {
       <Navbar />
       <ProductCard
         title="Antminer S21 (195 Th/s)"
-        description="The Antminer S21 is an SHA-256 algorithm mining equipment manufactured by Bitmain. It is able to mine Bitcoin with a maximum hashrate of 195TH/s with a power consumption of 3413W."
+        description="El Antminer S21 es fabricado por Bitmain y realiza minado con el algoritmo SHA-256 que ejecuta un hashrate máximo de 195Th/s - 188Th/s para un consumo de energía de sólo 3412-3290W."
         title2="SHA-256"
         description2="Algorithm"
         title3="195 TH/s"
         description3="Hashrate"
-        title4="3413w"
+        title4="3412-3290W"
         description4="Consumption"
       />
       <WhatsAppButton message="Hola, estoy interesado en el Antminer S21 (195  Th/s)." />

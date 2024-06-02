@@ -13,6 +13,8 @@ import Facilities from '@/components/Facilities/Facilities';
 import Shop from '@/components/ShopLanding/Shop';
 import Link from 'next/link';
 import FloatingWhatsAppButton from '@/components/WppFijo';
+import Schedule from '@/components/ShopComponents/Schedule';
+import Powered from '@/components/PoweredLanding';
 
 export default function Home() {
   const contactFormRef = useRef(null);
@@ -66,9 +68,11 @@ export default function Home() {
         </Link>
       </div>
       <Shop />
+      <Powered />
       <CardsLanding />
       <Facilities />
       <Faqs />
+      <Schedule />
       <ContactForm1 ref={contactFormRef} />
       <Footer />
       <FloatingWhatsAppButton message="Hola, queria consultar sobre los mineros" />

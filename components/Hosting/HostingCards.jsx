@@ -12,22 +12,22 @@ const HostingCards = () => {
         <SingleCard
           image="/low-cost.png"
           title="Low Cost Of Power"
-          subtitle="We offer Bitcoin Miner Hosting at $0.08 per kWh all in."
+          subtitle="Ofrecemos hosting a 0,058 el kwh."
         />
         <SingleCard
           image="/earth.png"
-          title="Low Natural Disaster"
-          subtitle="Argentina has a safe climate, rarely seeing natural disasters"
+          title="Bajos desastres naturales"
+          subtitle="Argentina tiene un clima muy seguro, raramente se ven desastres naturales"
         />
         <SingleCard
           image="/idea2.png"
-          title="Clean Energy"
-          subtitle="Most of our energy is renewable, sourced from Solar & Windmills."
+          title="Flare Gas"
+          subtitle="Convertimos el gas de los pozos petroliferon en energia."
         />
         <SingleCard
           image="/settings1.png"
-          title="Cool Temperatures"
-          subtitle="Downtime stays to a minimum with cool temps in the summer"
+          title="Bajas Temperaturas"
+          subtitle="Mantenemos el tiempo apagado al minimo debido a las bajas temperaturas en el verano"
         />
       </div>
     </div>

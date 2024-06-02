@@ -1,6 +1,6 @@
 .shop-container {
   color: white;
-  font-family: rouben;
+
   text-align: center;
   margin-top: 150px;
   margin-bottom: 200px;
@@ -90,6 +90,9 @@
 
 .precio-shop:hover {
   color: transparent; /* Hace transparente el texto original del botón */
+}
+.wpp {
+  display: flex;
 }
 .whatsapp-button {
   background-color: #36b079;

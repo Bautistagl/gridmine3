@@ -8,7 +8,7 @@ const Footer = () => {
       <section className="container-footer">
         <Image alt="" src="/gridMineBlanco.svg" height={80} width={180} />
         <div className="redes-footer">
-          <a href="//www.linkedin.com">
+          <a href="https://www.linkedin.com/company/grid-mine/">
             <img
               style={{ marginLeft: '0px' }}
               className="icon-redes"
@@ -21,9 +21,9 @@ const Footer = () => {
           </a>
 
           <a href="//www.twitter.com">
-            <img className="icon-redes" src={'/twitter-sign.png'} />
+            <img className="icon-redes" src={'/twitter.png'} />
           </a>
-          <a href="//www.instragram.com">
+          <a href="https://www.instagram.com/gridmine_io/">
             <img className="icon-redes" src={'/instagram.png'} />
           </a>
         </div>

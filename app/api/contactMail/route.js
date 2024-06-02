@@ -15,8 +15,8 @@ export async function POST(request) {
     });
 
     const mailOption = {
-      from: 'bautistagonzalezlazo@gmail.com',
-      to: 'foltita26@gmail.com',
+      from: 'support@gridmine.io',
+      to: 'support@gridmine.io',
       subject: 'Consulta Grid Mine',
       html: `
         <h2>Consulta de ${name} </h2>

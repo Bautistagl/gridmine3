@@ -5,12 +5,12 @@ const Schedule = () => {
   return (
     <div className="schedule-box">
       <h2>
-        {' '}
-        Get a Proposal Including Hosting, Protection Plans, and Miner Options.
+        Obtene una propuesta incluyendo Hosting, Planes de garantía y opciones
+        de mineros.
       </h2>
       <button>
         <Link href="https://cal.com/bautista-gonzalez-lazo-g8xn68">
-          Schedule Call
+          Agendá una llamada
         </Link>
       </button>
     </div>

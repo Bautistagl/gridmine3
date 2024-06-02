@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Specifications = () => {
+const SpecificationsS21 = () => {
   return (
     <div className="bitmain-info-container">
       <h2>Bitmain</h2>
@@ -12,11 +12,11 @@ const Specifications = () => {
           </tr>
           <tr>
             <th>Modelo</th>
-            <td>Antminer S19K Pro 120Th/s</td>
+            <td>Antminer S21 195-188Th/s</td>
           </tr>
           <tr>
             <th>Lanzamiento</th>
-            <td>Septiembre 2023</td>
+            <td>Marzo 2024</td>
           </tr>
           <tr>
             <th>Tamaño sin</th>
@@ -28,11 +28,11 @@ const Specifications = () => {
           </tr>
           <tr>
             <th>Peso neto</th>
-            <td>12850g</td>
+            <td>15400g</td>
           </tr>
           <tr>
             <th>Peso bruto</th>
-            <td>14500g</td>
+            <td>17100g</td>
           </tr>
           <tr>
             <th>Nivel de sonido</th>
@@ -43,20 +43,12 @@ const Specifications = () => {
             <td>4</td>
           </tr>
           <tr>
-            <th>Modo de conexión de red</th>
-            <td>RJ45 Ethernet 10/100m</td>
-          </tr>
-          <tr>
             <th>Potencia</th>
-            <td>2760W</td>
-          </tr>
-          <tr>
-            <th>Eficiencia energética</th>
-            <td>23 ±5%</td>
+            <td>3412-3290W</td>
           </tr>
           <tr>
             <th>Voltaje</th>
-            <td>200-240V</td>
+            <td>220-277</td>
           </tr>
           <tr>
             <th>Interfaz</th>
@@ -80,4 +72,4 @@ const Specifications = () => {
   );
 };
 
-export default Specifications;
+export default SpecificationsS21;

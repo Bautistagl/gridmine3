@@ -8,6 +8,7 @@ import ContactProd from '@/components/ShopComponents/ContactProd';
 import Schedule from '@/components/ShopComponents/Schedule';
 import Specifications from '@/components/ShopComponents/Specifications';
 import WhatsAppButton from '@/components/BotonWpp';
+import AdditionalInfo from '@/components/ShopComponents/AdditionalInfo';
 
 export default function Ant120() {
   return (
@@ -15,15 +16,19 @@ export default function Ant120() {
       <Navbar />
       <ProductCard
         title="Antminer T21 BTC Miner (190 TH)"
-        description="Antminer S19k Pro is an SHA-256 algorithm mining equipment manufactured by Bitmain. It is able to mine Bitcoin with a maximum hashrate of 120TH/s with a power consumption of 2760W."
+        description="El Antminer T21 es fabricado por Bitmain y realiza minado con el algoritmo SHA-256 que ejecuta un hashrate máximo de 190Th/s para un consumo de energía de sólo 3610W."
         title2="SHA-256"
         description2="Algorithm"
         title3="190 TH/s"
         description3="Hashrate"
-        title4="2760w"
+        title4="3610W"
         description4="Consumption"
+        price1="US$1000"
+        price2="US$3000"
+        version1="195 Th/s - In Stock"
+        version2="188 Th/s - In Stock"
       />
-      <WhatsAppButton message="Hola, estoy interesado en el Antminer T21 (120 Th/s)." />
+      <WhatsAppButton message="Hola, estoy interesado en el Antminer T21." />
       <Specifications />
       <h1 className="title-contactProd">Request Price</h1>
       <span className="span-contactProd">
@@ -31,6 +36,7 @@ export default function Ant120() {
         fast as possible.
       </span>
       <ContactProd />
+      <AdditionalInfo />
       <Schedule />
       <Footer />
     </div>

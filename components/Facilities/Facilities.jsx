@@ -12,11 +12,6 @@ const Facilities = () => {
 
         <div className="facilities-items">
           <FacilitiesItem
-            icon="/serving2.png"
-            title="Serving ALL Miners"
-            info="Compass accommodates miners of all sizes, from 1 to 100,000 machines!"
-          />
-          <FacilitiesItem
             icon="/leaf2.png"
             title="Green Options"
             info="Grid Mine offers a green Bitcoin Mining by flaring of surplus natural gas"
@@ -32,7 +27,7 @@ const Facilities = () => {
             info="Grid Mine provide the best power price available from comparable data centers"
           />
           <span> Interested in hosting with Grid Mine?</span>
-          <p> Become a Grid Mine verified hosting facility </p>
+
           <div className="button learn-more">
             <span className="circle">
               <span className="icon arrow"></span>
@@ -47,8 +42,7 @@ const Facilities = () => {
       </div>
       <div className="facilities-fotos">
         <Image alt="" src="/mining.jpg" height={170} width={400} />
-        <Image alt="" src="/mining2.jpg" height={170} width={400} />
-        <Image alt="" src="/mining3.jpg" height={170} width={400} />
+        <Image alt="" src="/fotoFeature.jpg" height={170} width={400} />
       </div>
     </div>
   );

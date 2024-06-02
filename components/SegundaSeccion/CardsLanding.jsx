@@ -5,8 +5,8 @@ import Image from 'next/image';
 const CardsLanding = () => {
   return (
     <div className="cards-landing">
+      <h1> Hosting</h1>
       <p>WHY PICK GRID MINE?</p>
-      <h1> It&apos;s easy, we make Bitcoing mining effortless</h1>
       <div className="cards-container">
         <SingleCard
           image="/calc.png"
@@ -16,21 +16,18 @@ const CardsLanding = () => {
         />
         <SingleCard
           image="/shi.png"
-          title="Precision Billing"
-          subtitle="Only billed for your uptime. 
-          Avg 98.2%+ Uptime."
+          title="Reparaciones Inlcuídas"
+          subtitle="Todas las reparaciones de mineros estan incluídas por los primeros 12 meses"
         />
         <SingleCard
           image="/sec.png"
-          title="Precision Billing"
-          subtitle="Only billed for your uptime. 
-          Avg 98.2%+ Uptime."
+          title="Seguridad"
+          subtitle="24-7-365 on-site security"
         />
         <SingleCard
           image="/sup2.png"
-          title="Precision Billing"
-          subtitle="Only billed for your uptime. 
-          Avg 98.2%+ Uptime."
+          title="Customer Support"
+          subtitle="Para nosotros el servicio al cliente lo es todo."
         />
       </div>
     </div>

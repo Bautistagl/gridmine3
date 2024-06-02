@@ -7,7 +7,7 @@
 
 .product-card {
   color: rgb(255, 255, 255);
-  font-family: rouben;
+
   margin: auto;
   margin-left: 0px;
   text-align: center;
@@ -75,7 +75,6 @@
   flex-direction: column;
   width: 80%;
   margin: auto;
-  font-family: rouben light;
 }
 .inputs-support2 input {
   height: 30px;
@@ -88,12 +87,11 @@
   font-size: 0.9rem;
   margin: 2px;
   color: white;
-  font-family: rouben;
 }
 
 .title-contactProd {
   color: white;
-  font-family: rouben;
+
   font-size: 2.5rem;
   margin-top: -50px;
 }
@@ -112,7 +110,6 @@
   margin-bottom: 150px;
 }
 .schedule-box h2 {
-  font-family: rouben;
   color: white;
   width: 70%;
   margin: auto;
@@ -127,6 +124,7 @@
 }
 .feats-container {
   display: flex;
+  margin-bottom: 30px;
 }
 .bitmain-info-container {
   width: 70%;
@@ -161,6 +159,78 @@
 .bitmain-info-table th {
   background-color: #f2f2f2;
   font-weight: bold;
+}
+.version-selection {
+  display: flex;
+  align-items: center;
+}
+.version-button {
+  border-radius: 30px;
+  height: 50px;
+}
+.version-button.selected {
+  background-color: #36b079;
+  color: white;
+  border-radius: 30px;
+}
+.price-display h2 {
+  font-size: 2rem;
+}
+.additionalInfo {
+  margin: 20px 0;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 80vw;
+  margin-bottom: 15vh;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.tabs button:hover {
+  background-color: #ddd;
+}
+
+.tabs button:focus {
+  outline: none;
+  background-color: #36b079;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content h2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #333;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #666;
+}
+.content span {
+  line-height: 2;
 }
 @media (max-width: 1401px) {
   .image-product {

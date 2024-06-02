@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const ShopCard = ({ setProduct, image, title, terahash, link }) => {
+const ShopCard = ({ setProduct, image, title, terahash, link, precio }) => {
   return (
     <div onClick={() => setProduct(title)} className="shop-card">
       <div className="terahash">
@@ -24,7 +24,7 @@ const ShopCard = ({ setProduct, image, title, terahash, link }) => {
       />
       <h3>{title}</h3>
       <Link href={link}>
-        <button className="precio-shop">US$5,200 - US$7,233</button>
+        <button className="precio-shop">{precio}</button>
       </Link>
     </div>
   );

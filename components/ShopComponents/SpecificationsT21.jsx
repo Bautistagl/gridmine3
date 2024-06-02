@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Specifications = () => {
+const SpecificationsT21 = () => {
   return (
     <div className="bitmain-info-container">
       <h2>Bitmain</h2>
@@ -12,11 +12,11 @@ const Specifications = () => {
           </tr>
           <tr>
             <th>Modelo</th>
-            <td>Antminer S19K Pro 120Th/s</td>
+            <td>Antminer T21 190Th/s</td>
           </tr>
           <tr>
             <th>Lanzamiento</th>
-            <td>Septiembre 2023</td>
+            <td>Marzo 2024</td>
           </tr>
           <tr>
             <th>Tamaño sin</th>
@@ -28,11 +28,11 @@ const Specifications = () => {
           </tr>
           <tr>
             <th>Peso neto</th>
-            <td>12850g</td>
+            <td>16400g</td>
           </tr>
           <tr>
             <th>Peso bruto</th>
-            <td>14500g</td>
+            <td>18100g</td>
           </tr>
           <tr>
             <th>Nivel de sonido</th>
@@ -40,7 +40,7 @@ const Specifications = () => {
           </tr>
           <tr>
             <th>Ventilador(es)</th>
-            <td>4</td>
+            <td>2</td>
           </tr>
           <tr>
             <th>Modo de conexión de red</th>
@@ -48,15 +48,11 @@ const Specifications = () => {
           </tr>
           <tr>
             <th>Potencia</th>
-            <td>2760W</td>
-          </tr>
-          <tr>
-            <th>Eficiencia energética</th>
-            <td>23 ±5%</td>
+            <td>3610W</td>
           </tr>
           <tr>
             <th>Voltaje</th>
-            <td>200-240V</td>
+            <td>380-415V</td>
           </tr>
           <tr>
             <th>Interfaz</th>
@@ -64,7 +60,7 @@ const Specifications = () => {
           </tr>
           <tr>
             <th>Temperatura de almacenamiento</th>
-            <td>-20-70</td>
+            <td>-40-85</td>
           </tr>
           <tr>
             <th>Temperatura</th>
@@ -80,4 +76,4 @@ const Specifications = () => {
   );
 };
 
-export default Specifications;
+export default SpecificationsT21;

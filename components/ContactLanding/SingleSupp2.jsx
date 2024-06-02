@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
+import WhatsAppContact from '../ContactWpp';
 
-const SingleSupp = ({ title, subtitle, button, image }) => {
+const SingleSupp2 = ({ title, subtitle, button, image }) => {
   return (
     <div className="singleSupp">
       <Image alt="" src={image} height={40} width={40} />
@@ -9,11 +10,9 @@ const SingleSupp = ({ title, subtitle, button, image }) => {
         <span>{title}</span>
         <p>{subtitle}</p>
       </div>
-      <a className="wpp" href={'mailto:support@gridmine.io'}>
-        <button> {button} </button>
-      </a>
+      <WhatsAppContact message="Hola, queria consultar sobre el servicio de hosting." />
     </div>
   );
 };
 
-export default SingleSupp;
+export default SingleSupp2;

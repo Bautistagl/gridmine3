@@ -15,6 +15,7 @@ const Shop = () => {
           title="Bitmain Antminer T21 Bitcoin Miner"
           terahash="190 Th/s"
           link="antT21"
+          precio="US$ 1000"
         />
         <ShopCard
           setProduct={setProduct}
@@ -22,6 +23,7 @@ const Shop = () => {
           title="Bitmain Antminer S19K Pro Bitcoin Miner"
           terahash="120 Th/s"
           link="antS19K"
+          precio="US$ 1000"
         />
         <ShopCard
           setProduct={setProduct}
@@ -29,6 +31,7 @@ const Shop = () => {
           title="Bitmain Antminer S21 BTC Miner "
           terahash="195 Th/s"
           link="antS21"
+          precio="US$ 1000"
         />
       </div>
     </div>

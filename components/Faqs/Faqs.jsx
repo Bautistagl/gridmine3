@@ -23,8 +23,8 @@ const Faqs = () => {
             {selected === 1 ? (
               <div className="parrafo-features-landing">
                 It&apos;s simple. Purchase machines through us. We set them up,
-                and you start earning Bitcoin. Each month you will prepay your
-                electricity cost for your machines. That&apos;s it!
+                and you start earning Bitcoin. Each month you will your
+                electricity cost + 10% fee for your machines. That&apos;s it
               </div>
             ) : (
               ''
@@ -43,8 +43,8 @@ const Faqs = () => {
             <div className={selected === 2 ? 'linea-selected' : 'linea'}> </div>
             {selected === 2 ? (
               <div className="parrafo-features-landing">
-                We charge as low as $0.08/kWh all in. For example; an S19 J Pro
-                costs about $175 per month.
+                We charge as low as $0.058/kWh all in. For example; an S19k Pro
+                costs about $119 per month.
               </div>
             ) : (
               ''
@@ -64,7 +64,7 @@ const Faqs = () => {
 
             {selected === 3 ? (
               <div className="parrafo-features-landing">
-                There are no other fees, all you pay is your electricity.
+                Cargamos un 10% de la ganancia bruta
               </div>
             ) : (
               ''
@@ -78,13 +78,13 @@ const Faqs = () => {
                 selected === 4 ? 'span-landing-selected2' : 'span-landing2'
               }>
               {' '}
-              How long is the contract?{' '}
+              What is the set up fee?{' '}
             </span>
             <div className={selected === 4 ? 'linea-selected' : 'linea'}> </div>
             {selected === 4 ? (
               <div className="parrafo-features-landing">
-                12 months, paid at the beginning of each month via Credit or
-                Debit Card.
+                The set up fee is a one-time payment payable at the time of
+                installation.
               </div>
             ) : (
               ''
@@ -126,26 +126,6 @@ const Faqs = () => {
                 parts, materially reducing the downtime typically involved with
                 repairs. Our certified, trained and dedicated repair technicians
                 can promptly diagnose problems and make necessary repairs.
-              </div>
-            ) : (
-              ''
-            )}
-          </div>
-
-          <div className="contenedor-features2">
-            <span
-              onClick={() => setSelected(7)}
-              className={
-                selected === 7 ? 'span-landing-selected2' : 'span-landing2'
-              }>
-              {' '}
-              Can I visit your facility?{' '}
-            </span>
-            <div className={selected === 7 ? 'linea-selected' : 'linea'}> </div>
-            {selected === 7 ? (
-              <div className="parrafo-features-landing">
-                Absolutely! Book an appointment here. Our mining facility is
-                located in Cedar Fall, Iowa.
               </div>
             ) : (
               ''

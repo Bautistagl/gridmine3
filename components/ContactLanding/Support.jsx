@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SingleSupp from './SingleSupp';
+import SingleSupp2 from './SingleSupp2';
 
 const Support = () => {
   const [name, setName] = useState('');
@@ -29,12 +30,12 @@ const Support = () => {
         <SingleSupp
           title="Email"
           subtitle="support@gridmine.io"
-          button="Send an email"
+          button="Envianos un mail"
           image="/live-chat.png"
         />
-        <SingleSupp
+        <SingleSupp2
           title="Whatsapp"
-          subtitle="Talk to our experts"
+          subtitle="Habla con nuestros expertos"
           button="+54 9 11 2244‑2179"
           image="/live-chat.png"
         />
@@ -44,28 +45,28 @@ const Support = () => {
         className="support-form">
         <div className="inputs-container">
           <div className="inputs-support">
-            <label>Your name</label>
+            <label>Nombre</label>
             <input
-              placeholder="Enter your name"
+              placeholder="Escribí tu nombre"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
           <div className="inputs-support">
-            <label>Email Address</label>
+            <label>Email </label>
             <input
-              placeholder="Enter your email"
+              placeholder="Escribí tu nombre"
               value={mail}
               onChange={(e) => setMail(e.target.value)}
             />
           </div>
         </div>
         <textarea
-          placeholder="Brief about the requirements"
+          placeholder="Leve descripción sobre la consulta a hacer."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button type="submit">Send</button>
+        <button type="submit">Enviar</button>
       </form>
     </div>
   );
