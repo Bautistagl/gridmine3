@@ -27,7 +27,7 @@ const ProductCard = ({
       <Image
         className="image-product"
         alt=""
-        src="/iluAsic.svg"
+        src="/antminer.webp"
         height={750}
         width={750}
       />
