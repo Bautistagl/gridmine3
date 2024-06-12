@@ -14,7 +14,7 @@ export async function POST(request) {
       },
     });
 
-    const mailOption = {
+    const mailOptionSupport = {
       from: 'support@gridmine.io',
       to: 'support@gridmine.io',
       subject: 'Consulta Grid Mine',
@@ -25,15 +25,32 @@ export async function POST(request) {
         `,
     };
 
-    await transporter.sendMail(mailOption);
+    const mailOptionConfirmation = {
+      from: 'support@gridmine.io',
+      to: email,
+      subject: 'Confirmación de recepción de consulta',
+      html: `
+        <h2>Hola ${name},</h2>
+        <p>Hemos recibido tu consulta y te responderemos lo antes posible.</p>
+        <p>Consulta enviada:</p>
+        <h4>${message}</h4>
+        <p>Gracias por contactarnos.</p>
+        `,
+    };
+
+    // Enviar correo al soporte
+    await transporter.sendMail(mailOptionSupport);
+    // Enviar correo de confirmación al remitente
+    await transporter.sendMail(mailOptionConfirmation);
 
     return NextResponse.json(
-      { message: 'Email Sent Successfully' },
+      { message: 'Emails Sent Successfully' },
       { status: 200 }
     );
   } catch (error) {
+    console.error('Failed to send email:', error);
     return NextResponse.json(
-      { message: 'Failed to Send Email' },
+      { message: 'Failed to Send Emails' },
       { status: 500 }
     );
   }

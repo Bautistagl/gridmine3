@@ -8,12 +8,12 @@ const CardsLanding = () => {
       <h1> Hosting</h1>
       <p>WHY PICK GRID MINE?</p>
       <div className="cards-container">
-        <SingleCard
+        {/* <SingleCard
           image="/calc.png"
           title="Precision Billing"
           subtitle="Only billed for your uptime. 
           Avg 98.2%+ Uptime."
-        />
+        /> */}
         <SingleCard
           image="/shi.png"
           title="Reparaciones Inlcuídas"

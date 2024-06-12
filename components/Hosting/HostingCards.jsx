@@ -6,18 +6,18 @@ import SingleCard from '../SegundaSeccion/SingleCard';
 const HostingCards = () => {
   return (
     <div className="cards-landing">
-      <p>WHY MINE IN GRID MINE?</p>
-      <h1> Grid Mine has many benefits for a Bitcoin Mining Operation.</h1>
+      <p>POR QUE MINAR EN GRID MINE?</p>
+      <h1> Grid Mine ofrece muchos beneficios para minar Bitcoin.</h1>
       <div className="cards-container">
         <SingleCard
           image="/low-cost.png"
-          title="Low Cost Of Power"
+          title="Bajo costo energético"
           subtitle="Ofrecemos hosting a 0,058 el kwh."
         />
         <SingleCard
           image="/earth.png"
           title="Bajos desastres naturales"
-          subtitle="Argentina tiene un clima muy seguro, raramente se ven desastres naturales"
+          subtitle="Argentina tiene un clima muy seguro, raramente se ven desastres naturales."
         />
         <SingleCard
           image="/idea2.png"
@@ -27,7 +27,7 @@ const HostingCards = () => {
         <SingleCard
           image="/settings1.png"
           title="Bajas Temperaturas"
-          subtitle="Mantenemos el tiempo apagado al minimo debido a las bajas temperaturas en el verano"
+          subtitle="Mantenemos el tiempo apagado al minimo debido a las bajas temperaturas en el verano."
         />
       </div>
     </div>

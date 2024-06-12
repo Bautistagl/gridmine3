@@ -49,7 +49,7 @@ export default function Home() {
       <div className="banner-container">
         <Banner
           title="Mineria de Bitcoin: Tu Solucion Aqui."
-          subtitle="Grid simplifies the deployment of your applications to a decentralized cloud, allowing you to get started with just a few clicks. As your projects expand, grid gives you the freedom to adapt your infrastructure to your exact needs, ensuring a scalable and customizable environment."
+          subtitle="Grid Mine simplifica la adquisición y alojamiento de dispositivos ASIC. Nos encargamos de todo el proceso, desde la compra hasta la gestión en nuestros centros de datos seguros. Además, utilizamos gas de venteo para obtener energía sostenible, asegurando un funcionamiento eficiente."
         />
         <img
           ref={ref}
@@ -75,7 +75,7 @@ export default function Home() {
       <Schedule />
       <ContactForm1 ref={contactFormRef} />
       <Footer />
-      <FloatingWhatsAppButton message="Hola, queria consultar sobre los mineros" />
+      <FloatingWhatsAppButton message="Hola, estoy interesado en su servicio. Me gustaría recibir más información al respecto. ¡Gracias!" />
     </div>
   );
 }

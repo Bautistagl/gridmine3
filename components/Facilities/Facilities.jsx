@@ -7,14 +7,14 @@ const Facilities = () => {
   return (
     <div className="facilities">
       <div className="container-facilities">
-        <h1>The Worlds Best Mining Facilities</h1>
-        <span>Available at the click of a button</span>
+        <h1>Instalaciones eficientes</h1>
+        {/* <span>Available at the click of a button</span> */}
 
         <div className="facilities-items">
           <FacilitiesItem
             icon="/leaf2.png"
             title="Green Options"
-            info="Grid Mine offers a green Bitcoin Mining by flaring of surplus natural gas"
+            info="Grid Mine ofrece una minería de Bitcoin mediante el venteo de gas natural excedente"
           />
           <FacilitiesItem
             icon="/supp2.png"

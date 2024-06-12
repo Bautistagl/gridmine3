@@ -3,19 +3,25 @@ import Navbar from '@/components/Navbar';
 import styles from '.././page.module.css';
 import HostingCards from '@/components/Hosting/HostingCards';
 import Footer from '@/components/Footer';
+import Schedule from '@/components/ShopComponents/Schedule';
+import Shop from '@/components/ShopLanding/Shop';
 
 export default function Hosting() {
   return (
     <div className={styles.main}>
       <Navbar />
       <h2 className="title-hosting">
-        Check out our awesome hosting facilities.
+        Chequea nuestras facilidades para el hosting de mineros.
       </h2>
       <div className="box-hosting">
         <span>1MW</span>
       </div>
-      <span className="span-hosting">CHUBUT, ARGENTINA</span>
+      <span style={{ marginTop: '10px' }} className="span-hosting">
+        CHUBUT, ARGENTINA
+      </span>
       <HostingCards />
+      <Schedule />
+      <Shop />
       <Footer />
     </div>
   );

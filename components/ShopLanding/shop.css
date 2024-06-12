@@ -17,10 +17,10 @@
   cursor: pointer;
   width: 16vw;
 }
-.responsive-img {
+/* .responsive-img {
   width: 100%;
   height: 100%;
-}
+} */
 .shop-card h3 {
   display: flex;
   color: #0c1317;
@@ -92,12 +92,19 @@
 }
 .wpp {
   display: flex;
+  border-radius: 50px;
+}
+.whatsapp-button2 {
+  background-color: #0c1317;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  font-size: 16px;
 }
 .whatsapp-button {
   background-color: #36b079;
   border-radius: 50px;
   margin-bottom: 50px;
-  font-size: 26px;
+  font-size: 16px;
 }
 .floating-whatsapp-button {
   position: fixed;
@@ -119,10 +126,6 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-}
-
-.floating-whatsapp-button:hover {
-  background-color: #1da851;
 }
 
 @media (max-width: 1350px) {

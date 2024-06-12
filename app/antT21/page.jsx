@@ -9,6 +9,7 @@ import Schedule from '@/components/ShopComponents/Schedule';
 import Specifications from '@/components/ShopComponents/Specifications';
 import WhatsAppButton from '@/components/BotonWpp';
 import AdditionalInfo from '@/components/ShopComponents/AdditionalInfo';
+import HostingButton from '@/components/HostingButton';
 
 export default function Ant120() {
   return (
@@ -24,12 +25,34 @@ export default function Ant120() {
         title4="3610W"
         description4="Consumption"
         price1="US$1000"
-        price2="US$3000"
-        version1="195 Th/s - In Stock"
-        version2="188 Th/s - In Stock"
+        version1="190 Th/s - En Stock"
+        image="/antminer21.png"
+        heigth={250}
+        width={300}
       />
-      <WhatsAppButton message="Hola, estoy interesado en el Antminer T21." />
-      <Specifications />
+      <div style={{ marginTop: '40px' }}>
+        <WhatsAppButton message="Hola, estoy interesado en comprar el Antminer T21." />
+        <HostingButton message="Hola, estoy interesado en el hosting del Antminer T21." />
+      </div>
+      <Specifications
+        fabricante="Bitmain"
+        modelo="Antminer T21 190Th/s"
+        lanzamiento="Marzo 2024"
+        tamañoSin="400 X 195 X 290mm"
+        tamañoCon="570 X 316 X 430mm"
+        pesoNeto="16400g"
+        pesoBruto="18100g"
+        nivelDeSonido="75db"
+        ventiladores="2"
+        modoDeConexionDeRed="RJ45 Ethernet 10/100m"
+        potencia="3610W"
+        eficienciaEnergetica="-"
+        voltaje="380-415V"
+        interfaz="Ethernet"
+        temperaturaDeAlmacenamiento="-40-85"
+        temperatura="0 - 45 °C"
+        humedad="10 - 90 %"
+      />
       <h1 className="title-contactProd">Request Price</h1>
       <span className="span-contactProd">
         Reach out to us with this contact form and we will get back to you as

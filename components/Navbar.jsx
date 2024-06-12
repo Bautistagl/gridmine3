@@ -30,7 +30,7 @@ function Navbar({ scrollToContactForm }) {
                 setDropdown2(!dropdown2);
               }}
               className="nav-title">
-              Shop
+              Productos
               <img className="downNavbar" src="/downNavbar.png" alt="" />
             </div>
             <Link href="/faqs">
@@ -81,7 +81,7 @@ function Navbar({ scrollToContactForm }) {
         </div>
         <div className="productos">
           <div className="descripcion-productos">
-            <Link href="/antS19K">
+            <Link href="/antS21">
               <span className="titulo-productos">Antminer S21(195 TH)</span>
             </Link>
             <span className="subtitulo-productos">

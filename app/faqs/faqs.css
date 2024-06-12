@@ -21,3 +21,14 @@
 .active .answer {
   display: block;
 }
+@media (min-height: 1900px) {
+  .faqSection {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .faqSection {
+    margin-top: 50px;
+  }
+}

@@ -9,9 +9,7 @@ const Schedule = () => {
         de mineros.
       </h2>
       <button>
-        <Link href="https://cal.com/bautista-gonzalez-lazo-g8xn68">
-          Agendá una llamada
-        </Link>
+        <Link href="https://cal.com/grid-mine">Agendá una llamada</Link>
       </button>
     </div>
   );

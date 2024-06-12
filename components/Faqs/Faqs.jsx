@@ -24,7 +24,7 @@ const Faqs = () => {
               <div className="parrafo-features-landing">
                 It&apos;s simple. Purchase machines through us. We set them up,
                 and you start earning Bitcoin. Each month you will your
-                electricity cost + 10% fee for your machines. That&apos;s it
+                electricity cost + 10% fee for your machines. That&apos;s it!
               </div>
             ) : (
               ''
@@ -139,12 +139,12 @@ const Faqs = () => {
                 selected === 8 ? 'span-landing-selected2' : 'span-landing2'
               }>
               {' '}
-              Still have questions?{' '}
+              Todavía tenes preguntas?{' '}
             </span>
             <div className={selected === 8 ? 'linea-selected' : 'linea'}> </div>
             {selected === 8 ? (
               <div className="parrafo-features-landing">
-                No worries! Book a discovery call here to learn more.
+                Agendá una llamada!.
               </div>
             ) : (
               ''

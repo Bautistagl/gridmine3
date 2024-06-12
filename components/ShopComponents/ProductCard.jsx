@@ -15,6 +15,9 @@ const ProductCard = ({
   price2,
   version1,
   version2,
+  image,
+  width,
+  heigth,
 }) => {
   const [selectedVersion, setSelectedVersion] = useState(version1);
 
@@ -24,13 +27,9 @@ const ProductCard = ({
 
   return (
     <div className="productCard-container">
-      <Image
-        className="image-product"
-        alt=""
-        src="/antminer.webp"
-        height={750}
-        width={750}
-      />
+      <div className="image-product">
+        <Image alt="" src={image} height={heigth} width={width} />
+      </div>
       <div className="product-card">
         <h1>{title}</h1>
         <span>{description}</span>
@@ -52,20 +51,30 @@ const ProductCard = ({
           />
         </div>
         <div className="version-selection">
-          <button
-            className={`version-button ${
-              selectedVersion === version1 ? 'selected' : ''
-            }`}
-            onClick={() => handleSelectionChange(version1)}>
-            {version1}
-          </button>
-          <button
-            className={`version-button ${
-              selectedVersion === version2 ? 'selected' : ''
-            }`}
-            onClick={() => handleSelectionChange(version2)}>
-            {version2}
-          </button>
+          {version1 ? (
+            <button
+              className={`version-button ${
+                selectedVersion === version1 ? 'selected' : ''
+              }`}
+              onClick={() => handleSelectionChange(version1)}>
+              {version1}
+            </button>
+          ) : (
+            ''
+          )}
+
+          {version2 ? (
+            <button
+              className={`version-button ${
+                selectedVersion === version2 ? 'selected' : ''
+              }`}
+              onClick={() => handleSelectionChange(version2)}>
+              {version2}
+            </button>
+          ) : (
+            ''
+          )}
+
           <div className="price-display">
             {selectedVersion === version1 ? (
               <h2> {price1}</h2>

@@ -2,7 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const ShopCard = ({ setProduct, image, title, terahash, link, precio }) => {
+const ShopCard = ({
+  setProduct,
+  image,
+  title,
+  terahash,
+  link,
+  precio,
+  height,
+  width,
+}) => {
   return (
     <div onClick={() => setProduct(title)} className="shop-card">
       <div className="terahash">
@@ -19,8 +28,8 @@ const ShopCard = ({ setProduct, image, title, terahash, link, precio }) => {
         className="responsive-img"
         alt=""
         src={image}
-        height={200}
-        width={230}
+        height={height}
+        width={width}
       />
       <h3>{title}</h3>
       <Link href={link}>

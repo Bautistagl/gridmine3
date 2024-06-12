@@ -1,6 +1,24 @@
 import React from 'react';
 
-const Specifications = () => {
+const Specifications = ({
+  fabricante,
+  modelo,
+  lanzamiento,
+  tamañoSin,
+  tamañoCon,
+  pesoNeto,
+  pesoBruto,
+  nivelDeSonido,
+  ventiladores,
+  modoDeConexionDeRed,
+  potencia,
+  eficienciaEnergetica,
+  voltaje,
+  interfaz,
+  temperaturaDeAlmacenamiento,
+  temperatura,
+  humedad,
+}) => {
   return (
     <div className="bitmain-info-container">
       <h2>Bitmain</h2>
@@ -8,71 +26,71 @@ const Specifications = () => {
         <tbody>
           <tr>
             <th>Fabricante</th>
-            <td>Bitmain</td>
+            <td>{fabricante}</td>
           </tr>
           <tr>
             <th>Modelo</th>
-            <td>Antminer S19K Pro 120Th/s</td>
+            <td>{modelo}</td>
           </tr>
           <tr>
             <th>Lanzamiento</th>
-            <td>Septiembre 2023</td>
+            <td>{lanzamiento}</td>
           </tr>
           <tr>
             <th>Tamaño sin</th>
-            <td>400 X 195 X 290mm</td>
+            <td>{tamañoSin}</td>
           </tr>
           <tr>
             <th>Tamaño con</th>
-            <td>570 X 316 X 430mm</td>
+            <td>{tamañoCon}</td>
           </tr>
           <tr>
             <th>Peso neto</th>
-            <td>12850g</td>
+            <td>{pesoNeto}</td>
           </tr>
           <tr>
             <th>Peso bruto</th>
-            <td>14500g</td>
+            <td>{pesoBruto}</td>
           </tr>
           <tr>
             <th>Nivel de sonido</th>
-            <td>75db</td>
+            <td>{nivelDeSonido}</td>
           </tr>
           <tr>
             <th>Ventilador(es)</th>
-            <td>4</td>
+            <td>{ventiladores}</td>
           </tr>
           <tr>
             <th>Modo de conexión de red</th>
-            <td>RJ45 Ethernet 10/100m</td>
+            <td>{modoDeConexionDeRed}</td>
           </tr>
           <tr>
             <th>Potencia</th>
-            <td>2760W</td>
+            <td>{potencia}</td>
           </tr>
           <tr>
             <th>Eficiencia energética</th>
-            <td>23 ±5%</td>
+            <td>{eficienciaEnergetica}</td>
           </tr>
           <tr>
             <th>Voltaje</th>
-            <td>200-240V</td>
+            <td>{voltaje}</td>
           </tr>
           <tr>
             <th>Interfaz</th>
-            <td>Ethernet</td>
+            <td>{interfaz}</td>
           </tr>
           <tr>
             <th>Temperatura de almacenamiento</th>
-            <td>-20-70</td>
+            <td>{temperaturaDeAlmacenamiento}</td>
           </tr>
           <tr>
             <th>Temperatura</th>
-            <td>0 - 45 °C</td>
+            <td>{temperatura}</td>
           </tr>
           <tr>
             <th>Humedad</th>
-            <td>10 - 90 %</td>
+            <td>{humedad}</td>
           </tr>
         </tbody>
       </table>
