@@ -292,6 +292,13 @@ button:active {
     text-align: center !important;
     justify-content: center;
   }
+  .whatsapp-button3 {
+    display: flex;
+    width: 50vw !important;
+    margin: auto;
+    text-align: center !important;
+    justify-content: center;
+  }
   .navbar {
     display: none;
   }

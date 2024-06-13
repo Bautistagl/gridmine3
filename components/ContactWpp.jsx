@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WhatsAppContact = ({ message }) => {
+const WhatsAppContact = ({ message, style }) => {
   const whatsappUrl = `https://wa.me/+5491122442179?text=${encodeURIComponent(
     message
   )}`;
@@ -11,7 +11,7 @@ const WhatsAppContact = ({ message }) => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer">
-      <button className="whatsapp-button2">+5491122442179</button>
+      <button className={`whatsapp-button` + style}>+5491122442179</button>
     </a>
   );
 };

@@ -10,7 +10,10 @@ const SingleSupp2 = ({ title, subtitle, button, image }) => {
         <span>{title}</span>
         <p>{subtitle}</p>
       </div>
-      <WhatsAppContact message="Hola, queria consultar sobre el servicio de hosting." />
+      <WhatsAppContact
+        style={3}
+        message="Hola, queria consultar sobre el servicio de hosting."
+      />
     </div>
   );
 };

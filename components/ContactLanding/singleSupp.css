@@ -123,6 +123,7 @@
   .singleSupp button {
     margin: auto;
     height: 40px;
+    margin-bottom: 10px;
   }
   .textos-supp {
     justify-content: center;
@@ -152,5 +153,8 @@
   .inputs-support input {
     display: flex;
     margin: auto !important;
+    width: 90%;
+    margin-left: 0px !important;
+    margin-bottom: 10px !important;
   }
 }
