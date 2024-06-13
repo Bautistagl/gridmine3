@@ -15,6 +15,7 @@ import Link from 'next/link';
 import FloatingWhatsAppButton from '@/components/WppFijo';
 import Schedule from '@/components/ShopComponents/Schedule';
 import Powered from '@/components/PoweredLanding';
+import NavbarMobile from '@/components/NavbarMobile';
 
 export default function Home() {
   const contactFormRef = useRef(null);
@@ -46,6 +47,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Navbar scrollToContactForm={scrollToContactForm} />
+      <NavbarMobile />
       <div className="banner-container">
         <Banner
           title="Mineria de Bitcoin: Tu Solucion Aqui."

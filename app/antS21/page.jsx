@@ -9,11 +9,13 @@ import Schedule from '@/components/ShopComponents/Schedule';
 import Specifications from '@/components/ShopComponents/Specifications';
 import WhatsAppButton from '@/components/BotonWpp';
 import HostingButton from '@/components/HostingButton';
+import NavbarMobile from '@/components/NavbarMobile';
 
 export default function Ant195() {
   return (
     <div className={styles.main}>
       <Navbar />
+      <NavbarMobile />
       <ProductCard
         title="Antminer S21 (195 Th/s)"
         description="El Antminer S21 es fabricado por Bitmain y realiza minado con el algoritmo SHA-256 que ejecuta un hashrate máximo de 195Th/s - 188Th/s para un consumo de energía de sólo 3412-3290W."
@@ -25,14 +27,14 @@ export default function Ant195() {
         description4="Consumption"
         price1="US$1000"
         price2="US$3000"
-        version1="195 Th/s - In Stock"
-        version2="188 Th/s - In Stock"
+        version1="Lote Junio"
+        version2="Lote Julio"
         image="/antminer.webp"
         heigth={350}
         width={450}
       />
 
-      <div style={{ marginTop: '40px' }}>
+      <div className="mobile-buy" style={{ marginTop: '40px' }}>
         <WhatsAppButton message="Hola, estoy interesado en el Antminer S21 (195  Th/s)." />
         <HostingButton message="Hola, estoy interesado en el hosting del Antminer S21 (195  Th/s)." />
       </div>

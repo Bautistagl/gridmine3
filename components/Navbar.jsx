@@ -64,9 +64,6 @@ function Navbar({ scrollToContactForm }) {
             <Link href="/antT21">
               <span className="titulo-productos">Antminer T21(190 TH)</span>
             </Link>
-            <span className="subtitulo-productos">
-              Una descripcion un poco mas larga paraq ver{' '}
-            </span>
           </div>
         </div>
         <div className="productos">
@@ -74,9 +71,6 @@ function Navbar({ scrollToContactForm }) {
             <Link href="/antS19K">
               <span className="titulo-productos">Antminer S19K(120 TH)</span>
             </Link>
-            <span className="subtitulo-productos">
-              Una descripcion un poco mas larga paraq ver{' '}
-            </span>
           </div>
         </div>
         <div className="productos">
@@ -84,9 +78,6 @@ function Navbar({ scrollToContactForm }) {
             <Link href="/antS21">
               <span className="titulo-productos">Antminer S21(195 TH)</span>
             </Link>
-            <span className="subtitulo-productos">
-              Una descripcion un poco mas larga paraq ver{' '}
-            </span>
           </div>
         </div>
       </div>

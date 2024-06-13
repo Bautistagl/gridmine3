@@ -50,37 +50,31 @@ const ProductCard = ({
             description={description4}
           />
         </div>
+        <h4>Lote de entrega</h4>
         <div className="version-selection">
-          {version1 ? (
+          {version1 && (
             <button
               className={`version-button ${
                 selectedVersion === version1 ? 'selected' : ''
               }`}
               onClick={() => handleSelectionChange(version1)}>
+              <div className="circle"></div>
               {version1}
             </button>
-          ) : (
-            ''
           )}
 
-          {version2 ? (
+          {version2 && (
             <button
               className={`version-button ${
                 selectedVersion === version2 ? 'selected' : ''
               }`}
               onClick={() => handleSelectionChange(version2)}>
+              <div className="circle"></div>
               {version2}
             </button>
-          ) : (
-            ''
           )}
-
           <div className="price-display">
-            {selectedVersion === version1 ? (
-              <h2> {price1}</h2>
-            ) : (
-              <h2> {price2}</h2>
-            )}
+            <h2>{selectedVersion === version1 ? price1 : price2}</h2>
           </div>
         </div>
       </div>

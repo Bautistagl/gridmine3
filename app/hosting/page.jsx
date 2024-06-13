@@ -5,11 +5,13 @@ import HostingCards from '@/components/Hosting/HostingCards';
 import Footer from '@/components/Footer';
 import Schedule from '@/components/ShopComponents/Schedule';
 import Shop from '@/components/ShopLanding/Shop';
+import NavbarMobile from '@/components/NavbarMobile';
 
 export default function Hosting() {
   return (
     <div className={styles.main}>
       <Navbar />
+      <NavbarMobile />
       <h2 className="title-hosting">
         Chequea nuestras facilidades para el hosting de mineros.
       </h2>

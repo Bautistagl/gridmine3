@@ -97,11 +97,14 @@
   justify-content: center;
   align-items: center;
   height: 10vh;
-  background: #0c1317d9;
+  background: #333333;
   border-bottom: 3px solid #36b079;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: white;
   width: 100%;
+}
+.logo-flux {
+  height: 80px;
 }
 @media (max-width: 1250px) {
   .singleSupp {

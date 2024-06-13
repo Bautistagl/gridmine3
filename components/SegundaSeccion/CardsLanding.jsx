@@ -26,7 +26,7 @@ const CardsLanding = () => {
         />
         <SingleCard
           image="/sup2.png"
-          title="Customer Support"
+          title="Soporte"
           subtitle="Para nosotros el servicio al cliente lo es todo."
         />
       </div>

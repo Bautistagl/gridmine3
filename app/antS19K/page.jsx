@@ -8,11 +8,13 @@ import Footer from '@/components/Footer';
 import Specifications from '@/components/ShopComponents/Specifications';
 import WhatsAppButton from '@/components/BotonWpp';
 import HostingButton from '@/components/HostingButton';
+import NavbarMobile from '@/components/NavbarMobile';
 
 export default function Ant200() {
   return (
     <div className={styles.main}>
       <Navbar />
+      <NavbarMobile />
       <ProductCard
         title="Antminer S19k Pro (120 TH)"
         description="El Antminer S19K Pro es fabricado por Bitmain y realiza minado con el algoritmo SHA-256 que ejecuta un hashrate máximo de 120Th/s para un consumo de energía de sólo 2760W."

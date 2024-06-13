@@ -164,6 +164,19 @@
   .button-landing2 {
     grid-template-columns: auto;
   }
+  .faqSectionContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .faqs-container {
+    margin-left: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .faqButtons {
+    display: flex;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 650px) {

@@ -10,11 +10,13 @@ import Specifications from '@/components/ShopComponents/Specifications';
 import WhatsAppButton from '@/components/BotonWpp';
 import AdditionalInfo from '@/components/ShopComponents/AdditionalInfo';
 import HostingButton from '@/components/HostingButton';
+import NavbarMobile from '@/components/NavbarMobile';
 
 export default function Ant120() {
   return (
     <div className={styles.main}>
       <Navbar />
+      <NavbarMobile />
       <ProductCard
         title="Antminer T21 BTC Miner (190 TH)"
         description="El Antminer T21 es fabricado por Bitmain y realiza minado con el algoritmo SHA-256 que ejecuta un hashrate máximo de 190Th/s para un consumo de energía de sólo 3610W."

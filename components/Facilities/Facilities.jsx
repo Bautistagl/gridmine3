@@ -19,14 +19,14 @@ const Facilities = () => {
           <FacilitiesItem
             icon="/supp2.png"
             title="24/7 Support"
-            info="Our facilities have around the clock video surveillance, and we offer 24/7 customer service"
+            info="Nuestras instalaciones cuentan con vigilancia por video las 24 horas del día, y ofrecemos servicio al cliente las 24 horas, los 7 días de la semana."
           />
           <FacilitiesItem
             icon="/thunder2.png"
             title="Competitive Power"
-            info="Grid Mine provide the best power price available from comparable data centers"
+            info="Grid Mine ofrece el mejor costo energético entre la competencia."
           />
-          <span> Interested in hosting with Grid Mine?</span>
+          <span> Interesado en el hosting con Grid Mine?</span>
 
           <div className="button learn-more">
             <span className="circle">

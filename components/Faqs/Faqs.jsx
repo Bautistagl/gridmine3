@@ -16,15 +16,16 @@ const Faqs = () => {
                 selected === 1 ? 'span-landing-selected2' : 'span-landing2'
               }>
               {' '}
-              How does this work?{' '}
+              Como funciona el hosting?{' '}
             </span>
             <div className={selected === 1 ? 'linea-selected' : 'linea'}> </div>
 
             {selected === 1 ? (
               <div className="parrafo-features-landing">
-                It&apos;s simple. Purchase machines through us. We set them up,
-                and you start earning Bitcoin. Each month you will your
-                electricity cost + 10% fee for your machines. That&apos;s it!
+                Es simple. Compras las máquinas a través nuestro. Las
+                configuramos y comienzas a minar Bitcoin. Cada mes pagarás el
+                costo de electricidad más una tarifa del 10% por tus máquinas.
+                ¡Eso es todo!
               </div>
             ) : (
               ''
@@ -38,13 +39,13 @@ const Faqs = () => {
                 selected === 2 ? 'span-landing-selected2' : 'span-landing2'
               }>
               {' '}
-              How much does this cost?{' '}
+              Cuanto cuesta?{' '}
             </span>
             <div className={selected === 2 ? 'linea-selected' : 'linea'}> </div>
             {selected === 2 ? (
               <div className="parrafo-features-landing">
-                We charge as low as $0.058/kWh all in. For example; an S19k Pro
-                costs about $119 per month.
+                Cobramos tan solo $0.058/kWh todo incluido. Por ejemplo, un S19k
+                Pro cuesta aproximadamente $119 al mes.
               </div>
             ) : (
               ''
@@ -58,13 +59,13 @@ const Faqs = () => {
                 selected === 3 ? 'span-landing-selected2' : 'span-landing2'
               }>
               {' '}
-              Are there any other fees?{' '}
+              Hay alguna otra tarifa?{' '}
             </span>
             <div className={selected === 3 ? 'linea-selected' : 'linea'}> </div>
 
             {selected === 3 ? (
               <div className="parrafo-features-landing">
-                Cargamos un 10% de la ganancia bruta
+                Cargamos un 10% de la ganancia bruta.
               </div>
             ) : (
               ''
@@ -78,13 +79,13 @@ const Faqs = () => {
                 selected === 4 ? 'span-landing-selected2' : 'span-landing2'
               }>
               {' '}
-              What is the set up fee?{' '}
+              Cuál es la tarifa de configuración?{' '}
             </span>
             <div className={selected === 4 ? 'linea-selected' : 'linea'}> </div>
             {selected === 4 ? (
               <div className="parrafo-features-landing">
-                The set up fee is a one-time payment payable at the time of
-                installation.
+                La tarifa de configuración es un pago único que se realiza en el
+                momento de la instalación.
               </div>
             ) : (
               ''
@@ -97,13 +98,13 @@ const Faqs = () => {
                 selected === 5 ? 'span-landing-selected2' : 'span-landing2'
               }>
               {' '}
-              What happens when my contract is up?{' '}
+              Que pasa cuando se termina mi contrato?{' '}
             </span>
             <div className={selected === 5 ? 'linea-selected' : 'linea'}> </div>
             {selected === 5 ? (
               <div className="parrafo-features-landing">
-                Option to renew for another 12 months, otherwise we ship your
-                machines back to you at your cost.
+                Opción de renovar por otros 12 meses, de lo contrario, enviamos
+                tus máquinas de vuelta a tu domicilio a tu costo.
               </div>
             ) : (
               ''
@@ -117,15 +118,17 @@ const Faqs = () => {
                 selected === 6 ? 'span-landing-selected2' : 'span-landing2'
               }>
               {' '}
-              What happens if my miner breaks?{' '}
+              Que pasa si se rompe mi minero?{' '}
             </span>
             <div className={selected === 6 ? 'linea-selected' : 'linea'}> </div>
             {selected === 6 ? (
               <div className="parrafo-features-landing">
-                We&apos;re able to service and repair machines, using original
-                parts, materially reducing the downtime typically involved with
-                repairs. Our certified, trained and dedicated repair technicians
-                can promptly diagnose problems and make necessary repairs.
+                Podemos dar servicio y reparar máquinas utilizando piezas
+                originales, reduciendo significativamente el tiempo de
+                inactividad típico de las reparaciones. Nuestros técnicos de
+                reparación, certificados, capacitados y dedicados, pueden
+                diagnosticar problemas rápidamente y realizar las reparaciones
+                necesarias.
               </div>
             ) : (
               ''
