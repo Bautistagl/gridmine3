@@ -5,6 +5,17 @@ export async function POST(request) {
   try {
     const { email, name, message } = await request.json();
 
+    const currentHour = new Date().getHours();
+    let greeting;
+
+    if (currentHour < 12) {
+      greeting = 'Buenos días';
+    } else if (currentHour < 18) {
+      greeting = 'Buenas tardes';
+    } else {
+      greeting = 'Buenas noches';
+    }
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       secure: true,
@@ -30,8 +41,8 @@ export async function POST(request) {
       to: email,
       subject: 'Confirmación de recepción de consulta',
       html: `
-        <h2>Hola ${name},</h2>
-        <p>Hemos recibido tu consulta y te responderemos lo antes posible.</p>
+        <h2> ${greeting} ${name},</h2>
+        <p>Recibimos tu consulta correctamente. Un responsable estara en contacto respondiendo todas sus dudas.</p>
         <p>Consulta enviada:</p>
         <h4>${message}</h4>
         <p>Gracias por contactarnos.</p>

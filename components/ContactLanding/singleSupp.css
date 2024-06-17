@@ -104,7 +104,7 @@
   width: 100%;
 }
 .logo-flux {
-  height: 80px;
+  height: 100%;
 }
 @media (max-width: 1250px) {
   .singleSupp {
@@ -156,5 +156,8 @@
     width: 90%;
     margin-left: 0px !important;
     margin-bottom: 10px !important;
+  }
+  .powered {
+    display: none;
   }
 }

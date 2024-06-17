@@ -11,9 +11,11 @@ const ShopCard = ({
   precio,
   height,
   width,
+  style,
+  styleImage,
 }) => {
   return (
-    <div onClick={() => setProduct(title)} className="shop-card">
+    <div onClick={() => setProduct(title)} className={`shop-card ${style}`}>
       <div className="terahash">
         <Image
           className="icono-bitcoin"
@@ -24,17 +26,21 @@ const ShopCard = ({
         />
         <span> {terahash}</span>
       </div>
-      <Image
-        className="responsive-img"
-        alt=""
-        src={image}
-        height={height}
-        width={width}
-      />
-      <h3>{title}</h3>
-      <Link href={link}>
-        <button className="precio-shop">{precio}</button>
-      </Link>
+      <div className="image-container">
+        <Image
+          className={`responsive-img ${styleImage}`}
+          alt=""
+          src={image}
+          height={height}
+          width={width}
+        />
+      </div>
+      <div className="content-container">
+        <h3>{title}</h3>
+        <Link href={link}>
+          <button className="precio-shop">{precio}</button>
+        </Link>
+      </div>
     </div>
   );
 };

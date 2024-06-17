@@ -11,41 +11,27 @@ const Preguntas = () => {
   const faqs = {
     price: [
       {
-        question: '¿Fluctúan frecuentemente los precios en el sitio web?',
-        answer: '',
-      },
-      {
-        question:
-          '¿Están actualizados los precios de los equipos de minado en el sitio web?',
-        answer: '',
-      },
-      {
-        question: '¿Están disponibles todos los equipos de minado listados?',
-        answer: '',
-      },
-      {
         question:
           '¿Los pedidos al por mayor me dan acceso a descuentos especiales en los mineros?',
-        answer: '',
+        answer:
+          'Si desea comprar 2 o más equipos de minado, nuestro equipo se encargara de aplicar el descuento equivalente a la cantidad de equipos que se compren.',
       },
       {
         question: '¿Necesito pagar extra por suministro de energía?',
-        answer: '',
+        answer:
+          'No, nuestros precios incluyen los costos de suministro de energía.',
       },
       {
         question:
           '¿En qué moneda están listados los precios de los equipos de minado?',
-        answer: '',
+        answer:
+          'Los precios de los equipos de minado en nuestro sitio web están listados en USD',
       },
       {
         question:
           '¿Los precios indicados incluyen los gastos de envío del equipo de minado?',
-        answer: '',
-      },
-      {
-        question:
-          '¿Los precios que aparecen en el sitio web se basan en precios transparentes?',
-        answer: '',
+        answer:
+          'Sí, el precio indicado incluye los costos de envío que incluyen la entrega a domicilio.',
       },
     ],
     orders: [
@@ -55,65 +41,69 @@ const Preguntas = () => {
       },
       {
         question:
-          '¿Cómo realizar un pedido para un equipo de minado de Crypto Miner Bros?',
-        answer: '',
+          '¿Cómo realizar un pedido para un equipo de minado de Grid Mine?',
+        answer:
+          'Puede realizar su pedido a través de nuestro sitio web oficial. Puede contactarnos por WhatsApp, correo electrónico, o agenda una llamada. Nuestro equipo estará encantado de asistirle con su pedido y asegurar una entrega rápida. ¡Contáctenos hoy mismo para más detalles!',
       },
       {
         question: '¿Cómo puedo confirmar los detalles de mi pedido?',
-        answer: '',
+        answer:
+          'Usted recibirá una confirmación de pedido en su dirección de correo electrónico. En caso de no recibir un correo electrónico de confirmación, usted puede revisar el estado de su orden contactando a nuestro equipo',
       },
       {
         question:
           '¿Puedo alterar o modificar los detalles de mi pedido después de recibir la confirmación?',
-        answer: '',
+        answer:
+          'Le ayudaremos a modificar los datos de envío del cliente. Sin embargo, si el producto ha sido enviado, no podremos hacer las alteraciones necesarias.',
       },
-      { question: '¿Cómo puedo rastrear mi pedido?', answer: '' },
-      { question: '¿Puedo cancelar un pedido?', answer: '' },
       {
-        question: '¿Qué fuente de alimentación recibo: 110v o 220v?',
-        answer: '',
+        question: '¿Cómo puedo rastrear mi pedido?',
+        answer:
+          'Usted recibirá actualizaciones regulares en su dirección de correo electrónico de los detalles relacionados a su pedido. Si usted no recibe ninguna actualización en su dirección de correo electrónico, puede comunicarse con nuestro equipo.',
+      },
+      {
+        question: '¿Puedo cancelar un pedido?',
+        answer:
+          'No, lamentamos informarle que no permitimos cancelaciones una vez que se haya hecho el pedido.',
       },
       {
         question: '¿Cuáles son las ventajas de los pedidos al por mayor?',
-        answer: '',
+        answer:
+          'Si pide más de 1 equipo de minado, puede contáctenos para descuentos especiales.',
       },
       {
         question:
           '¿El juego del equipo de minado incluye cable de alimentación?',
-        answer: '',
+        answer: 'Nuestros equipos de minado incluyen cable de alimentación.',
       },
-      { question: '¿Puedo ordenar directamente de la bodega?', answer: '' },
+      {
+        question: '¿Que es la compra en lote?',
+        answer:
+          'Cuando vea la disponibilidad de producto en nuestro sitio web, usted encontrará el estado de entrega del minero. Lote: Con el método de lote el producto se enviará en el mes establecido pero está actualmente disponible para pedido.',
+      },
     ],
     shipping: [
-      { question: '¿Cuál es el período de garantía?', answer: '' },
       {
-        question:
-          '¿Existen diferentes períodos de garantía para diferentes equipos de minado?',
-        answer: '',
-      },
-      {
-        question: '¿Los equipos de minado usados con un período de garantía?',
-        answer: '',
+        question: '¿Cuál es el período de garantía?',
+        answer:
+          'Idealmente, la garantía del fabricante varía de 180-360 días de acuerdo con en la marca y modelo del minero.',
       },
       {
         question:
           '¿Los precios de los equipos de minado incluyen gastos de envío?',
-        answer: '',
+        answer:
+          'Sí, los precios mencionados de un equipo de minado en este sitio web incluyen los costos de envío.',
       },
       {
         question:
           '¿Cómo se aseguran de que el proceso de envío no tenga problemas?',
         answer: '',
       },
+
       {
-        question:
-          "¿Cuánto tiempo les tomaría enviar el producto 'en inventario'?",
-        answer: '',
-      },
-      { question: '¿Envían a todo el mundo?', answer: '' },
-      {
-        question: '¿Cómo pueden ayudarme a ahorrar en derechos aduaneros?',
-        answer: '',
+        question: '¿Envían a todo el mundo?',
+        answer:
+          'No, pero puede contactarse con nuestro equipo y buscar una solucion.',
       },
     ],
   };

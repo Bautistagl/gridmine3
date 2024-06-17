@@ -16,6 +16,7 @@ import FloatingWhatsAppButton from '@/components/WppFijo';
 import Schedule from '@/components/ShopComponents/Schedule';
 import Powered from '@/components/PoweredLanding';
 import NavbarMobile from '@/components/NavbarMobile';
+import Head from 'next/head';
 
 export default function Home() {
   const contactFormRef = useRef(null);
@@ -45,39 +46,54 @@ export default function Home() {
   };
 
   return (
-    <div className={styles.main}>
-      <Navbar scrollToContactForm={scrollToContactForm} />
-      <NavbarMobile />
-      <div className="banner-container">
-        <Banner
-          title="Mineria de Bitcoin: Tu Solucion Aqui."
-          subtitle="Grid Mine simplifica la adquisición y alojamiento de dispositivos ASIC. Nos encargamos de todo el proceso, desde la compra hasta la gestión en nuestros centros de datos seguros. Además, utilizamos gas de venteo para obtener energía sostenible, asegurando un funcionamiento eficiente."
+    <>
+      <Head>
+        <title>Grid Mine</title>
+        <meta
+          name="description"
+          content="Compra tu minero y hostealo en nuestras instalaciones con la mejor rentabilidad"
         />
-        <img
-          ref={ref}
-          style={inView ? fadeInStylesLeft : {}}
-          src="/iluAsic.svg"
-          alt=""
-          className="ilustracion-bannerGrande"
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Grid Mine" />
+        <meta
+          name="keywords"
+          content="Mineros, Mineria, Hosting, Hosting Mineros, Bitcoin, Ethereum, Dogecoin"
         />
-      </div>
-      <div className="button learn-more">
-        <span className="circle">
-          <span className="icon arrow"></span>
-        </span>
-        <Link href="/contact">
-          <span className="button-text">Comenza</span>
-        </Link>
-      </div>
-      <Shop />
-      <Powered />
-      <CardsLanding />
-      <Facilities />
-      <Faqs />
-      <Schedule />
-      <ContactForm1 ref={contactFormRef} />
-      <Footer />
-      <FloatingWhatsAppButton message="Hola, estoy interesado en su servicio. Me gustaría recibir más información al respecto. ¡Gracias!" />
-    </div>
+      </Head>
+      <main className={styles.main}>
+        <Navbar scrollToContactForm={scrollToContactForm} />
+        <NavbarMobile />
+        <div className="banner-container">
+          <Banner
+            title="Mineria de Bitcoin: Tu Solucion Aqui."
+            subtitle="Grid Mine simplifica la adquisición y alojamiento de dispositivos ASIC. Nos encargamos de todo el proceso, desde la compra hasta la gestión en nuestros centros de datos seguros. Además, utilizamos gas de venteo para obtener energía sostenible, asegurando un funcionamiento eficiente."
+          />
+          <img
+            ref={ref}
+            style={inView ? fadeInStylesLeft : {}}
+            src="/iluAsic.svg"
+            alt=""
+            className="ilustracion-bannerGrande"
+          />
+        </div>
+        <div className="button learn-more">
+          <span className="circle">
+            <span className="icon arrow"></span>
+          </span>
+          <Link href="/contact">
+            <span className="button-text">Comenza</span>
+          </Link>
+        </div>
+        <Shop />
+        <Powered />
+        <CardsLanding />
+        <Facilities />
+        <Faqs />
+        <Schedule />
+        <ContactForm1 ref={contactFormRef} />
+        <Footer />
+        <FloatingWhatsAppButton message="Hola, estoy interesado en su servicio. Me gustaría recibir más información al respecto. ¡Gracias!" />
+      </main>
+    </>
   );
 }

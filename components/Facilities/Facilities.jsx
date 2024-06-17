@@ -13,17 +13,17 @@ const Facilities = () => {
         <div className="facilities-items">
           <FacilitiesItem
             icon="/leaf2.png"
-            title="Green Options"
+            title="Sustentabilidad"
             info="Grid Mine ofrece una minería de Bitcoin mediante el venteo de gas natural excedente"
           />
           <FacilitiesItem
             icon="/supp2.png"
-            title="24/7 Support"
+            title="Soporte 24/7"
             info="Nuestras instalaciones cuentan con vigilancia por video las 24 horas del día, y ofrecemos servicio al cliente las 24 horas, los 7 días de la semana."
           />
           <FacilitiesItem
             icon="/thunder2.png"
-            title="Competitive Power"
+            title="Bajo costo energético"
             info="Grid Mine ofrece el mejor costo energético entre la competencia."
           />
           <span> Interesado en el hosting con Grid Mine?</span>
