@@ -17,6 +17,7 @@ import Schedule from '@/components/ShopComponents/Schedule';
 import Powered from '@/components/PoweredLanding';
 import NavbarMobile from '@/components/NavbarMobile';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   const contactFormRef = useRef(null);
@@ -68,11 +69,14 @@ export default function Home() {
             title="Mineria de Bitcoin: Tu Solucion Aqui."
             subtitle="Grid Mine simplifica la adquisición y alojamiento de dispositivos ASIC. Nos encargamos de todo el proceso, desde la compra hasta la gestión en nuestros centros de datos seguros. Además, utilizamos gas de venteo para obtener energía sostenible, asegurando un funcionamiento eficiente."
           />
-          <img
+          <Image
+            height={450}
+            width={750}
             ref={ref}
             style={inView ? fadeInStylesLeft : {}}
             src="/iluAsic.svg"
-            alt=""
+            alt="ilustracion-banner"
+            priority={true}
             className="ilustracion-bannerGrande"
           />
         </div>

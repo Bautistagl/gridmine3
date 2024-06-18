@@ -12,7 +12,11 @@ const NavbarMobile = () => {
     <div>
       <nav className="navbarMobile">
         <div className="logoMobile">
-          <img className="navbar-logo2" src="/gridMineBlanco.svg" />
+          <img
+            alt="logo-navbar"
+            className="navbar-logo2"
+            src="/gridMineBlanco.svg"
+          />
         </div>
         <div className="hamburgerMobile" onClick={toggleMenu}>
           <Image src="/menu.png" alt="Menu" width={30} height={30} />

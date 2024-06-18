@@ -10,6 +10,7 @@ const Footer = () => {
         <div className="redes-footer">
           <a href="https://www.linkedin.com/company/grid-mine/">
             <img
+              alt="logo-linkedin"
               style={{ marginLeft: '0px' }}
               className="icon-redes"
               src={'/linkedin.png'}
@@ -17,14 +18,22 @@ const Footer = () => {
           </a>
 
           <a href="//www.discord.com">
-            <img className="icon-redes" src={'/discord (1).png'} />
+            <img
+              alt="icon-discord"
+              className="icon-redes"
+              src={'/discord (1).png'}
+            />
           </a>
 
           <a href="//www.twitter.com">
-            <img className="icon-redes" src={'/twitter.png'} />
+            <img alt="icon-x" className="icon-redes" src={'/twitter.png'} />
           </a>
           <a href="https://www.instagram.com/gridmine_io/">
-            <img className="icon-redes" src={'/instagram.png'} />
+            <img
+              alt="icon-instagram"
+              className="icon-redes"
+              src={'/instagram.png'}
+            />
           </a>
         </div>
 

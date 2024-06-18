@@ -127,16 +127,6 @@
   background-color: #36b079;
   border-radius: 15px;
 }
-.precio-shop {
-  background-color: #fff; /* Ajusta el color según tu diseño */
-  border: 1px solid #ccc; /* Ajusta el color según tu diseño */
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 14px;
-  position: relative;
-  transition: color 0.3s ease; /* Transición suave para el cambio de texto */
-  margin-bottom: 0px !important;
-}
 
 .precio-shop::after {
   content: 'Ver Producto';

@@ -96,16 +96,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 100px;
   background: #333333;
   border-bottom: 3px solid #36b079;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   color: white;
   width: 100%;
 }
-.logo-flux {
-  height: 100%;
-}
+/* .logo-flux {
+  height: 90px;
+  width: 233px;
+} */
 @media (max-width: 1250px) {
   .singleSupp {
     width: 100%;

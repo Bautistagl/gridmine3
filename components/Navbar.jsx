@@ -22,7 +22,11 @@ function Navbar({ scrollToContactForm }) {
       <nav className={`navbar ${isSticky ? 'sticky' : ''}  `}>
         <div className="nav-items">
           <Link href="/">
-            <img className="navbar-logo" src="/gridMineBlanco.svg" />
+            <img
+              alt="logo-gridMine"
+              className="navbar-logo"
+              src="/gridMineBlanco.svg"
+            />
           </Link>
           <div className="un-contenedor">
             <div
