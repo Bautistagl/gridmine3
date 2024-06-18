@@ -39,11 +39,17 @@ export default function Ant200() {
           version1="Lote Junio"
           version2="Lote Julio"
           image="/antminer.webp"
-          heigth={350}
-          width={450}
+          heigth={400}
+          width={500}
         />
 
-        <div style={{ marginTop: '40px' }}>
+        <div
+          style={{
+            marginLeft: '60px',
+            marginTop: '10px',
+            display: 'flex',
+            marginBottom: '100px',
+          }}>
           <WhatsAppButton message="Hola, estoy interesado en el Antminer S19k Pro. Me gustaría recibir más información al respecto. Gracias!" />
           <HostingButton message="Hola, estoy interesado en el hosting del Antminer S19k Pro. Me gustaría recibir más información al respecto. Gracias!" />
         </div>

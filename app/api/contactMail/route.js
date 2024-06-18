@@ -17,11 +17,12 @@ export async function POST(request) {
     }
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'mail.privateemail.com',
+      port: 465,
       secure: true,
       auth: {
-        user: 'bautistagonzalezlazo@gmail.com',
-        pass: 'qpvf nnmz yjds fvck',
+        user: 'support@gridmine.io',
+        pass: 'byqjub-wuhxeb@#-3Zofdi',
       },
     });
 

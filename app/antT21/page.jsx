@@ -40,13 +40,13 @@ export default function Ant120() {
           version1="Lote Junio"
           version2="Lote Julio"
           image="/antminer21.png"
-          heigth={250}
-          width={300}
+          heigth={350}
+          width={400}
         />
-        <div style={{ marginTop: '40px' }}>
+        {/* <div style={{ marginTop: '40px' }}>
           <WhatsAppButton message="Hola, estoy interesado en comprar el Antminer T21. Me gustaría recibir más información al respecto. Gracias!" />
           <HostingButton message="Hola, estoy interesado en el hosting del Antminer T21. Me gustaría recibir más información al respecto. Gracias!" />
-        </div>
+        </div> */}
         <Specifications
           fabricante="Bitmain"
           modelo="Antminer T21 190Th/s"

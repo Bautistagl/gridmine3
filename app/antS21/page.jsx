@@ -37,14 +37,9 @@ export default function Ant195() {
           version1="Lote Junio"
           version2="Lote Julio"
           image="/antminer.webp"
-          heigth={350}
-          width={450}
+          heigth={450}
+          width={550}
         />
-
-        <div className="mobile-buy" style={{ marginTop: '40px' }}>
-          <WhatsAppButton message="Hola, estoy interesado en el Antminer S21 (195  Th/s). Me gustaría recibir más información al respecto. Gracias!" />
-          <HostingButton message="Hola, estoy interesado en el hosting del Antminer S21 (195  Th/s). Me gustaría recibir más información al respecto. Gracias!" />
-        </div>
 
         <Specifications
           fabricante="Bitmain"

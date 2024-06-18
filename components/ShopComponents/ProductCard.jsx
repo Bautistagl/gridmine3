@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import ProdFeat from './ProdFeat';
+import WhatsAppButton from '../BotonWpp';
+import HostingButton from '../HostingButton';
 
 const ProductCard = ({
   title,
@@ -76,6 +78,8 @@ const ProductCard = ({
           <div className="price-display">
             <h2>{selectedVersion === version1 ? price1 : price2}</h2>
           </div>
+          {/* <WhatsAppButton message="Hola, estoy interesado en comprar el Antminer T21. Me gustaría recibir más información al respecto. Gracias!" />
+          <HostingButton message="Hola, estoy interesado en el hosting del Antminer T21. Me gustaría recibir más información al respecto. Gracias!" /> */}
         </div>
       </div>
     </div>

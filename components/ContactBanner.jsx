@@ -20,7 +20,7 @@ const ContactBanner = () => {
           />
           <ContactBox
             circle="circle2"
-            title="Sales Call"
+            title="Llamada Comercial"
             text="¿Listo para comenzar a minar Bitcoin? Esta llamada con Jerónimo te da tiempo para seleccionar tu minero de Bitcoin, plan de electricidad y más."
             link="/cal.com/grid-mine/sales-call"
           />

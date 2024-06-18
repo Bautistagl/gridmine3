@@ -50,6 +50,22 @@ export default function Home() {
     <>
       <Head>
         <title>Grid Mine</title>
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          />
+        </noscript>
+        <style>{`
+           
+            body { font-family: 'Montserrat', sans-serif; }
+          `}</style>
         <meta
           name="description"
           content="Compra tu minero y hostealo en nuestras instalaciones con la mejor rentabilidad"
@@ -58,7 +74,7 @@ export default function Home() {
         <meta name="author" content="Grid Mine" />
         <meta
           name="keywords"
-          content="Mineros, Mineria, Hosting, Hosting Mineros, Bitcoin, Ethereum, Dogecoin"
+          content="Mineros, Mineria, Hosting, Hosting Mineros, Bitcoin, Ethereum, Dogecoin, Asics, btc"
         />
       </Head>
       <main className={styles.main}>
@@ -74,7 +90,7 @@ export default function Home() {
             width={750}
             ref={ref}
             style={inView ? fadeInStylesLeft : {}}
-            src="/iluAsic.svg"
+            src="/iluAsic2.png"
             alt="ilustracion-banner"
             priority={true}
             className="ilustracion-bannerGrande"
