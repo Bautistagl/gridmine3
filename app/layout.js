@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
-import './dashboard/dashboard.css';
+
 import './navbar.css';
 import './hosting/hosting.css';
 import '../components/Banner/banner.css';
