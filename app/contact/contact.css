@@ -15,157 +15,26 @@
   background-color: #83f9c3;
 }
 
-.title-contact-box {
-  display: flex;
-  font-size: 0.8rem;
-  font-family: rouben ligth;
-}
 
-.title-contact-box div,
-.title-contact-box img {
-  display: flex;
-  margin: auto 10px;
-}
 
-.contact-box {
-  color: white;
-  width: 40%;
-  margin: auto;
-  margin-top: 50px;
-  height: 23vh;
-  border-top: 1px solid rgba(255, 255, 255, 0.593);
-  padding: 15px;
-  cursor: pointer;
-}
 
-.contact-box:hover {
-  background-color: rgba(255, 255, 255, 0.433);
-}
 
-.contact-box span {
-  font-size: 0.8rem;
-}
 
-.contact-container {
-  width: 50%;
-  padding: 20px;
-  justify-content: center;
-  border: 2px solid rgba(255, 255, 255, 0.593);
-  background-color: rgba(255, 255, 255, 0.07);
-  border: 2px solid grey;
-  border-radius: 20px;
-  margin-top: 10vh;
-}
 
-.contact-text {
-  width: 40%;
-  margin: auto;
-  margin-right: 0px;
-  margin-left: auto;
-}
 
-.contact-text h1 {
-  color: white;
 
-  font-size: 3rem;
-}
 
-.contact-text span {
-  color: rgba(255, 255, 255, 0.714);
-}
 
-.contact {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
 
-.contact-container h3 {
-  color: white;
-  font-size: 1.8rem;
-  justify-content: center;
-  text-align: center;
-}
 
-.contact-container p {
-  color: white;
-  justify-content: center;
-  text-align: center;
-  width: 50%;
-  margin: auto;
-}
+
+
+
+
 
 .box-container {
   display: flex;
 }
 
-/* Mobile Styles */
-@media (min-height: 2000px) {
-  .contact-container {
-    max-height: 500px;
-  }
-  .contact-box {
-    height: 200px;
-  }
-}
-@media (max-height: 800px) {
-  .contact-container {
-    min-height: 450px !important;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .contact {
-    flex-direction: column-reverse; /* Cambia a columna en móviles con orden inverso */
-    width: 100%;
-    margin: 0;
-  }
 
-  .contact-container {
-    width: 80%;
-    padding: 10px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    height: 110%;
-  }
 
-  .contact-text {
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-
-  .contact-text h1 {
-    font-size: 2rem;
-  }
-
-  .contact-text span {
-    font-size: 0.9rem;
-  }
-
-  .contact-container p {
-    width: 90%;
-  }
-
-  .contact-box {
-    width: 80%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .box-container {
-    flex-direction: column;
-  }
-
-  .title-contact-box {
-    font-size: 1rem;
-  }
-
-  .title-contact-box div,
-  .title-contact-box img {
-    margin: auto;
-  }
-}

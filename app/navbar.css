@@ -248,26 +248,14 @@ button:active {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    height: 50px;
-    padding: 10px;
-  }
 
-  .nav-items {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
+
 
   .nav-items.show {
     display: flex;
   }
 }
-.menu-navbar {
-  display: none;
-}
+
 
 /* Solo mostrar la navbar en pantallas pequeñas */
 @media (max-width: 768px) {
@@ -299,9 +287,7 @@ button:active {
     text-align: center !important;
     justify-content: center;
   }
-  .navbar {
-    display: none;
-  }
+
   .navbarMobile {
     display: grid;
     grid-template-columns: auto auto;

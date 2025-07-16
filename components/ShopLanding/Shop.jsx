@@ -1,55 +1,58 @@
-import Image from 'next/image';
-import React, { useState } from 'react';
-import ShopCard from './ShopCard';
+"use client";
 
-const Shop = () => {
-  const [product, setProduct] = useState(null);
+import Image from "next/image";
+
+const FeaturesSection = () => {
+  const features = [
+    {
+      icon: <Image src="/laptop.png" alt="" height={70} width={70} />,
+      title: "Top Tier Technologies",
+      description: "Cutting-edge mining hardware and infrastructure",
+    },
+    {
+      icon: <Image src="/team.png" alt="" height={70} width={70} />,
+      title: "Experienced Management",
+      description: "Seasoned leadership to drive innovation and growth",
+    },
+    {
+      icon: <Image src="/hand.png" alt="" height={70} width={70} />,
+      title: "High Returns & Low Risk",
+      description: "Optimized business model for sustainable profitability",
+    },
+    {
+      icon: <Image src="/global-access.png" alt="" height={70} width={70} />,
+      title: "Global Expansion",
+      description: "Strategic vision to become a cross-border industry leader",
+    },
+  ];
+
   return (
-    <div className="shop-container">
-      <h1>Productos Disponibles</h1>
-      <Image alt="" src="/down.png" width={50} height={50} />
-      <div className="shop-cards">
-        <ShopCard
-          setProduct={setProduct}
-          image="/ProductoShop.webp"
-          title="Bitmain Antminer S19K Pro Bitcoin Miner"
-          terahash="120 Th/s"
-          link="antS19K"
-          precio="US$ 1000"
-          height={250}
-          width={250}
-          style={''}
-          styleImage={''}
-        />
-        <div>
-          <ShopCard
-            setProduct={setProduct}
-            image="/antminer21.png"
-            title="Bitmain Antminer T21 Bitcoin Miner"
-            terahash="190 Th/s"
-            link="antT21"
-            precio="US$ 1000"
-            height={250}
-            width={250}
-            style={2}
-            styleImage={2}
-          />
+    <section className="features-section">
+      <div className="container">
+        <div className="intro-text">
+          <div className="tituloBanner">Who we are?</div>
+          <p>
+            Grid Mine is a forward-thinking company with extensive experience in
+            digital assets, specializing in the development of cutting-edge,
+            sustainable, and profitable data centers driven by innovative
+            technologies.
+          </p>
         </div>
-        <ShopCard
-          setProduct={setProduct}
-          image="/ProductoShop.webp"
-          title="Bitmain Antminer S21 BTC Miner "
-          terahash="195 Th/s"
-          link="antS21"
-          precio="US$ 1000"
-          height={250}
-          width={250}
-          style={''}
-          styleImage={''}
-        />
+
+        <div className="features-grid">
+          {features.map((feature, index) => (
+            <div key={index} className="feature-card">
+              <div className="feature-icon">{feature.icon}</div>
+              <div className="feature-content">
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-description">{feature.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Shop;
+export default FeaturesSection;

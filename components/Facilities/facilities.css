@@ -1,90 +1,220 @@
-.facilities-items {
-  display: grid;
-  grid-template-columns: auto auto;
 
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-.facilities {
-  display: flex;
-  width: 80%;
+        .environmental-section {
+          position: relative;
+          min-height: 100vh;
+          background-image: url('/forest-background.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          width: 100%;
+        }
 
-  color: white;
-  margin-top: 150px;
-}
-.facilities-fotos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  width: 50%;
-}
+        .background-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(
+            135deg,
+            rgba(26, 26, 26, 0.85) 0%,
+            rgba(26, 26, 26, 0.75) 40%,
+            rgba(26, 26, 26, 0.3) 100%,
+            transparent 100%
+          );
+          z-index: 1;
+        }
 
-.facility-image {
-  display: flex;
-  width: 35px;
-  height: 35px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background-color: #0c1317;
-}
+        .container {
+         
+          margin: 0 auto;
+          padding: 0 20px;
+          position: relative;
+          z-index: 2;
+          width: 80%;
+        }
 
-.facilities span {
-  display: flex;
-  width: 80%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: rgba(255, 255, 255, 0.836);
-  font-size: 0.9rem;
-}
-.facilities-fotos img {
-  border-radius: 15px;
-  margin: 20px auto;
-}
-.container-facilities {
-  width: 50%;
-}
+        .content-wrapper {
+          display: flex;
+          align-items: center;
+          min-height: 80vh;
+        }
 
-@media (max-width: 768px) {
-  .facilities-items {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-  .facilities-fotos {
-    display: none;
-  }
-  .item-facility {
-    width: 100%;
-    height: auto;
-    margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.264);
-    border-radius: 10px;
-  }
-  .item-facility span {
-    margin-bottom: 15px !important;
-  }
-  .container-facilities {
-    width: 90%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-  }
-  .facilities {
-    justify-content: center;
-  }
-  .facilities span {
-    width: 80%;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-  }
-  .facility-image {
-    display: none;
-  }
-}
+        .text-content {
+          max-width: 600px;
+          color: white;
+        }
+
+        .title-container {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          margin-bottom: 40px;
+        }
+
+        .section-title {
+          font-size: 56px;
+          font-weight: 700;
+          line-height: 1.1;
+          color: white;
+          letter-spacing: -0.02em;
+        }
+
+        .leaf-icon {
+          margin-top: 10px;
+          animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+
+        .description {
+          margin-bottom: 32px;
+        }
+
+        .description p {
+          font-size: 18px;
+          line-height: 1.7;
+          color: #e0e0e0;
+          font-weight: 300;
+        }
+
+        .highlight2 {
+          color: #36b079;
+          font-weight: 500;
+        }
+
+        .statistics-content {
+          margin-bottom: 48px;
+        }
+
+        .statistics-content p {
+          font-size: 18px;
+          line-height: 1.7;
+          color: #e0e0e0;
+          font-weight: 300;
+        }
+
+        .stat-highlight {
+          color: #36b079;
+          font-size: 20px;
+          font-weight: 700;
+          padding-left: 4px;
+          text-shadow: 0 0 10px rgba(74, 222, 128, 0.3);
+        }
+
+        .environmental-metrics {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 24px;
+        }
+
+        .metric-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 16px;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 12px;
+          border: 1px solid rgba(74, 222, 128, 0.2);
+          backdrop-filter: blur(10px);
+          transition: all 0.3s ease;
+        }
+
+        .metric-item:hover {
+          background: rgba(255, 255, 255, 0.1);
+          border-color: #36b079;
+          transform: translateY(-2px);
+        }
+
+        .metric-icon {
+          flex-shrink: 0;
+        }
+
+        .metric-text {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .metric-value {
+          font-size: 18px;
+          font-weight: 700;
+          color: #36b079;
+          line-height: 1;
+        }
+
+        .metric-label {
+          font-size: 12px;
+          color: #b0b0b0;
+          font-weight: 400;
+          margin-top: 2px;
+        }
+
+        @media (max-width: 768px) {
+          .environmental-section {
+            min-height: 100vh;
+            background-position: center right;
+          }
+
+          .background-overlay {
+            background: linear-gradient(
+              135deg,
+              rgba(26, 26, 26, 0.9) 0%,
+              rgba(26, 26, 26, 0.8) 60%,
+              rgba(26, 26, 26, 0.4) 100%
+            );
+          }
+
+          .section-title {
+            font-size: 42px;
+          }
+
+          .title-container {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+          }
+
+          .description p,
+          .statistics-content p {
+            font-size: 16px;
+          }
+
+          .stat-highlight {
+            font-size: 20px;
+          }
+
+          .environmental-metrics {
+            grid-template-columns: 1fr;
+            gap: 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .container {
+            padding: 0 15px;
+          }
+
+          .section-title {
+            font-size: 36px;
+          }
+
+          .content-wrapper {
+            min-height: 90vh;
+          }
+
+          .text-content {
+            max-width: 100%;
+          }
+        }
+  

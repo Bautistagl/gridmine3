@@ -81,7 +81,10 @@ a {
     width: 90%;
     padding: 10px;
   }
-
+  .container-footer img{
+    width: 200px;
+    height: 100px;
+  }
   .boton-footer {
     width: 80%;
     margin: 10px auto;

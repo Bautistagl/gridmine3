@@ -19,50 +19,27 @@ function Navbar({ scrollToContactForm }) {
 
   return (
     <>
-      <nav className={`navbar ${isSticky ? 'sticky' : ''}  `}>
+      <nav className={`navbar ${isSticky ? "sticky" : ""}  `}>
         <div className="nav-items">
           <Link href="/">
             <img
               alt="logo-gridMine"
               className="navbar-logo"
-              src="/gridMineBlanco.svg"
+              src="/logoNuevo3.svg"
             />
           </Link>
-          <div className="un-contenedor">
-            <div
-              onClick={() => {
-                setDropdown2(!dropdown2);
-              }}
-              className="nav-title">
-              Productos
-              <img className="downNavbar" src="/downNavbar.png" alt="" />
-            </div>
-            <Link href="/faqs">
-              <div className="nav-title">Preguntas Frecuentes</div>
-            </Link>
-            <Link href="/hosting">
-              <div className="nav-title">Hosting</div>
-            </Link>
-            <Link href="/contact">
-              <div className="nav-title">Agendar llamada</div>
-            </Link>
-          </div>
-          <div className="login-register">
-            <Link href="/login">
-              {/* <button className="boton-landing1">Login</button> */}
-            </Link>
-          </div>
         </div>
       </nav>
 
       <div
-        className={`container-productos ${dropdown2 ? 'show' : ''} ${
-          isSticky ? 'sticky' : ''
+        className={`container-productos ${dropdown2 ? "show" : ""} ${
+          isSticky ? "sticky" : ""
         }`}
         onMouseOver={() => {
           setDropdown2(true);
         }}
-        onMouseLeave={() => setDropdown2(false)}>
+        onMouseLeave={() => setDropdown2(false)}
+      >
         <div className="productos">
           <div className="descripcion-productos">
             <Link href="/antT21">

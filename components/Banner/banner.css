@@ -1,31 +1,5 @@
-.banner-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 80%;
-  margin: 0 auto;
-  align-items: center;
-  padding: 5vh 0;
-  margin-top: 100px;
-}
-
-.ilustracion-bannerGrande {
-  height: 350px;
-  width: 550px;
-  margin: 0 auto;
-  margin-right: 0vw;
-  margin-top: 50px;
-}
-
-.textosBanner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .tituloBanner {
-  font-family: 'Rouben', sans-serif;
+  font-family: "Rouben", sans-serif;
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -35,64 +9,298 @@
   -webkit-text-fill-color: transparent;
 }
 
-.subtituloBanner {
-  font-size: 1.25rem;
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 26, 0.85) 0%,
+    rgba(26, 26, 26, 0.7) 40%,
+    rgba(26, 26, 26, 0.6) 70%,
+    rgba(26, 26, 26, 0.4) 100%
+  );
+  z-index: 1;
+}
+
+.banner-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+}
+
+.hero-content {
+  max-width: 700px;
   color: white;
 }
 
-@media (max-width: 1450px) {
-  .tituloBanner {
-    font-size: 3rem;
-  }
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
 
-  .subtituloBanner {
-    font-size: 1rem;
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.01em;
+}
+
+.hero-text {
+  margin-bottom: 60px;
+}
+
+.hero-title {
+  
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.highlight {
+  font-size: 52px;
+  font-weight: 700 !important;
+  margin: 0px;
+  color: white;
+  background: linear-gradient(225deg, #fff 30%, #36b079 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-weight: 300;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.cta-button.primary {
+  background: linear-gradient(135deg, #36b079 0%, #22c55e 100%);
+  color: white;
+}
+
+.cta-button.primary:hover {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(74, 222, 128, 0.3);
+}
+
+.cta-button.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.cta-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(74, 222, 128, 0.5);
+  transform: translateY(-2px);
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 32px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #36b079;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #b0b0b0;
+  font-weight: 400;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.7;
+  animation: bounce 2s infinite;
+}
+
+.scroll-text {
+  font-size: 14px;
+  color: #b0b0b0;
+  font-weight: 300;
+}
+
+.scroll-arrow {
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
   }
-  .ilustracion-bannerGrande {
-    margin: 0 auto;
-    margin-right: -10vw;
-    margin-top: 50px;
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
   }
 }
-@media (max-width: 1200px) {
-  .ilustracion-bannerGrande {
-    height: 300px;
-    width: 450px;
-    margin-right: -8vw;
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 52px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-stats {
+    gap: 24px;
   }
 }
 
 @media (max-width: 768px) {
-  .banner-container {
-    grid-template-columns: 1fr;
-    width: 90%;
+  .hero-section {
+    min-height: 100vh;
+    background-position: center right;
   }
-
   .tituloBanner {
     font-size: 2.5rem;
-    margin-top: 20px;
+  }
+  .background-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(26, 26, 26, 0.9) 0%,
+      rgba(26, 26, 26, 0.8) 60%,
+      rgba(26, 26, 26, 0.6) 100%
+    );
   }
 
-  .subtituloBanner {
-    font-size: 1rem;
+  .hero-title, .highlight {
+    font-size: 42px;
   }
 
-  .ilustracion-bannerGrande {
-    display: flex;
-    width: 500px;
-    height: 350px;
-    margin: auto;
-    margin-top: -5px;
-    margin-right: 40px;
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+  }
+
+  .stat-divider {
+    display: none;
   }
 }
-@media (max-width: 610px) {
-  .ilustracion-bannerGrande {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    margin-top: 5px;
-    margin-left: 15%;
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  .hero-title{
+    margin-top: 150px;
+  }
+  .hero-title, .highlight {
+    font-size: 36px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .stat-number {
+    font-size: 24px;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
   }
 }
