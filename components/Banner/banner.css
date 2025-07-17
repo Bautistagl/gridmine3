@@ -73,7 +73,7 @@
 }
 
 .hero-text {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -156,7 +156,7 @@
   gap: 32px;
   padding: 32px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .stat-item {
@@ -184,20 +184,20 @@
 
 .scroll-indicator {
   position: absolute;
-  bottom: 40px;
+  bottom: -60px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  opacity: 0.7;
+ 
   animation: bounce 2s infinite;
 }
 
 .scroll-text {
   font-size: 14px;
-  color: #b0b0b0;
+  color: #ffffff;
   font-weight: 300;
 }
 
@@ -301,6 +301,6 @@
   }
 
   .scroll-indicator {
-    bottom: 20px;
+    display: none;
   }
 }

@@ -17,19 +17,19 @@ export async function POST(request) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: 'mail.privateemail.com',
+      host: "mail.privateemail.com",
       port: 465,
       secure: true,
       auth: {
-        user: 'support@gridmine.io',
-        pass: 'byqjub-wuhxeb@#-3Zofdi',
+        user: "jeronimo@gridmine.io",
+        pass: "SiJU$a2K3c!xk!7",
       },
     });
 
     const mailOptionSupport = {
-      from: 'support@gridmine.io',
-      to: 'support@gridmine.io',
-      subject: 'Consulta Grid Mine',
+      from: "jeronimo@gridmine.io",
+      to: "jeronimo@gridmine.io",
+      subject: "Consulta Grid Mine",
       html: `
         <h2>Consulta de ${name} </h2>
         <h4> Email: ${email}</h4>
@@ -38,9 +38,9 @@ export async function POST(request) {
     };
 
     const mailOptionConfirmation = {
-      from: 'support@gridmine.io',
+      from: "jeronimo@gridmine.io",
       to: email,
-      subject: 'Confirmación de recepción de consulta',
+      subject: "Confirmación de recepción de consulta",
       html: `
         <h2> ${greeting} ${name},</h2>
         <p>Recibimos tu consulta correctamente. Un responsable estara en contacto respondiendo todas sus dudas.</p>

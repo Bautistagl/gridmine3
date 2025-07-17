@@ -1,32 +1,81 @@
 "use client"
 
-import { useState } from "react"
+import { forwardRef, useState } from "react";
 
-const ContactSection = () => {
+const ContactSection = forwardRef((props, ref) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
     message: "",
-  })
+  });
 
-  const handleInputChange = () => {
-    const { name, value } = e.target
+  // Estado para manejar el estado del envío (idle, sending, success, error) y mensajes
+  const [submissionStatus, setSubmissionStatus] = useState("idle");
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    // Asegúrate de pasar 'e' como argumento
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
-    }))
-  }
+    }));
+  };
 
-  const handleSubmit = () => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
+  const handleSubmit = async (e) => {
+    // Haz la función asíncrona
+    e.preventDefault();
+    setSubmissionStatus("sending");
+    setResponseMessage(""); // Limpia mensajes anteriores
+
+    try {
+      const response = await fetch("/api/contactMail", {
+        // Ruta a tu API
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          // La API solo espera name, email y message, así que solo envía esos.
+          // Si quieres enviar phone y company, tendrás que modificar tu API.
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmissionStatus("success");
+        setResponseMessage(data.message || "¡Mensaje enviado con éxito!");
+        setFormData({
+          // Opcional: limpiar el formulario después del envío exitoso
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          message: "",
+        });
+      } else {
+        setSubmissionStatus("error");
+        setResponseMessage(
+          data.message || "Hubo un error al enviar el mensaje."
+        );
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      setSubmissionStatus("error");
+      setResponseMessage(
+        "Hubo un problema de conexión. Por favor, inténtalo de nuevo."
+      );
+    }
+  };
 
   return (
-    <section className="contact-section">
+    <section ref={ref} className="contact-section">
       <div className="contact-overlay"> </div>
       <div className="contact-container">
         <div className="contact-content">
@@ -40,7 +89,7 @@ const ContactSection = () => {
             </h2>
             <p className="contact-subtitle">
               Ready to transform stranded energy into sustainable computing
-              power? Let`&apos;`s discuss how Grid Mine can power your digital
+              power? Let&apos;s discuss how Grid Mine can power your digital
               infrastructure with clean, efficient solutions.
             </p>
             <div className="contact-info">
@@ -82,7 +131,8 @@ const ContactSection = () => {
                 </div>
                 <div className="info-content">
                   <h4>Contact</h4>
-                  <p>info@gridmine.com</p>
+                  <p>tomassgro@gmail.com</p>
+                  <p>jeronimo@gridmine.io</p>
                 </div>
               </div>
             </div>
@@ -148,24 +198,46 @@ const ContactSection = () => {
               </div>
 
               <div className="form-row">
-                <button type="submit" className="submit-button">
-                  <span>Submit</span>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path
-                      d="M4 10h12M12 6l4 4-4 4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      fill="none"
-                    />
-                  </svg>
+                <button
+                  type="submit"
+                  className="submit-button"
+                  disabled={submissionStatus === "sending"} // Deshabilita el botón durante el envío
+                >
+                  <span>
+                    {submissionStatus === "sending" ? "Sending..." : "Submit"}
+                  </span>
+                  {submissionStatus !== "sending" && (
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                        d="M4 10h12M12 6l4 4-4 4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        fill="none"
+                      />
+                    </svg>
+                  )}
                 </button>
               </div>
+
+              {/* Muestra mensajes de estado */}
+              {responseMessage && (
+                <div
+                  className={`form-message ${
+                    submissionStatus === "success"
+                      ? "text-green-500"
+                      : "text-red-500"
+                  }`}
+                >
+                  {responseMessage}
+                </div>
+              )}
             </form>
           </div>
         </div>
       </div>
     </section>
   );
-}
+});
+ContactSection.displayName = "ContactSection";
 
-export default ContactSection
+export default ContactSection;

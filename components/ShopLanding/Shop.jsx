@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import { forwardRef } from "react";
 
-const FeaturesSection = () => {
+const FeaturesSection = forwardRef((props, ref) => {
   const features = [
     {
       icon: <Image src="/laptop.png" alt="" height={70} width={70} />,
@@ -27,7 +28,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="features-section">
+    <section ref={ref} className="features-section">
       <div className="container">
         <div className="intro-text">
           <div className="tituloBanner">Who we are?</div>
@@ -53,6 +54,7 @@ const FeaturesSection = () => {
       </div>
     </section>
   );
-};
+});
+FeaturesSection.displayName = "FeaturesSection";
 
 export default FeaturesSection;

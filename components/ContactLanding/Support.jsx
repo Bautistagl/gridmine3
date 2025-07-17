@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const OperationsSection = () => {
   const timelineEvents = [
     {
@@ -114,128 +116,29 @@ const OperationsSection = () => {
           <div className="current-operations">
             <h3 className="subsection-title">Rio Mayo Operations</h3>
 
-            <div className="operations-stats">
-              {operationalStats.map((stat, index) => (
-                <div key={index} className="stat-card">
-                  <div className="stat-icon">{stat.icon}</div>
-                  <div className="stat-content">
-                    <div className="stat-title">{stat.title}</div>
-                    {stat.subtitle && (
-                      <div className="stat-subtitle">{stat.subtitle}</div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-
             <div className="operations-gallery">
               <div className="gallery-item large">
                 <div className="placeholder-image">
-                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect
-                      x="10"
-                      y="15"
-                      width="40"
-                      height="30"
-                      rx="4"
-                      stroke="#36b079"
-                      strokeWidth="2"
-                      fill="none"
-                    />
-                    <circle
-                      cx="20"
-                      cy="25"
-                      r="3"
-                      stroke="#36b079"
-                      strokeWidth="2"
-                      fill="none"
-                    />
-                    <path
-                      d="M15 35 L25 30 L35 35 L45 25"
-                      stroke="#36b079"
-                      strokeWidth="2"
-                      fill="none"
-                    />
-                  </svg>
+                  <Image alt="" src="/transport.jpg" width={200} height={250} />
                   <span>Mining Equipment Transport</span>
                 </div>
               </div>
 
               <div className="gallery-item">
                 <div className="placeholder-image">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <rect
-                      x="5"
-                      y="10"
-                      width="30"
-                      height="20"
-                      rx="2"
-                      stroke="#36b079"
-                      strokeWidth="2"
-                      fill="none"
-                    />
-                    <rect
-                      x="8"
-                      y="13"
-                      width="6"
-                      height="4"
-                      fill="#36b079"
-                      opacity="0.6"
-                    />
-                    <rect
-                      x="16"
-                      y="13"
-                      width="6"
-                      height="4"
-                      fill="#36b079"
-                      opacity="0.6"
-                    />
-                    <rect
-                      x="24"
-                      y="13"
-                      width="6"
-                      height="4"
-                      fill="#36b079"
-                      opacity="0.6"
-                    />
-                    <rect
-                      x="8"
-                      y="20"
-                      width="24"
-                      height="2"
-                      fill="#36b079"
-                      opacity="0.4"
-                    />
-                  </svg>
+                  <Image alt="" src="/equipment.jpg" width={200} height={250} />
                   <span>Mining Hardware</span>
                 </div>
               </div>
 
               <div className="gallery-item">
                 <div className="placeholder-image">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <rect
-                      x="8"
-                      y="12"
-                      width="24"
-                      height="16"
-                      rx="2"
-                      stroke="#36b079"
-                      strokeWidth="2"
-                      fill="none"
-                    />
-                    <rect
-                      x="12"
-                      y="8"
-                      width="16"
-                      height="4"
-                      rx="1"
-                      fill="#36b079"
-                    />
-                    <circle cx="16" cy="20" r="2" fill="#36b079" />
-                    <circle cx="24" cy="20" r="2" fill="#36b079" />
-                    <path d="M10 30 L30 30" stroke="#36b079" strokeWidth="2" />
-                  </svg>
+                  <Image
+                    alt=""
+                    src="/operations.jpg"
+                    width={200}
+                    height={250}
+                  />
                   <span>Facility Operations</span>
                 </div>
               </div>

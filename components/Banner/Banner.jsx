@@ -1,14 +1,6 @@
 "use client";
 
-const HeroSection = () => {
-  const scrollToContact = () => {
-    // Smooth scroll to contact section
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+const HeroSection = ({ scrollToContactForm, scrollToFeatures }) => {
   return (
     <section className="hero-section">
       <div className="background-overlay"></div>
@@ -20,7 +12,7 @@ const HeroSection = () => {
               <br />
               into sustainable
               <br />
-              <h2 className="highlight">digital infrastructure</h2>
+              <span className="highlight">digital infrastructure</span>
             </h1>
 
             <p className="hero-subtitle">
@@ -31,7 +23,10 @@ const HeroSection = () => {
             </p>
 
             <div className="hero-actions">
-              <button className="cta-button primary" onClick={scrollToContact}>
+              <button
+                className="cta-button primary"
+                onClick={scrollToContactForm}
+              >
                 <span>Get Started</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path
@@ -43,7 +38,10 @@ const HeroSection = () => {
                 </svg>
               </button>
 
-              <button className="cta-button secondary">
+              <button
+                onClick={scrollToFeatures}
+                className="cta-button secondary"
+              >
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <circle
                     cx="10"
@@ -82,7 +80,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-
         <div className="scroll-indicator">
           <div className="scroll-text">Scroll to explore</div>
           <div className="scroll-arrow">

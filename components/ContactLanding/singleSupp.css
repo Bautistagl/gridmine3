@@ -1,230 +1,182 @@
+.operations-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 100px 0;
+  position: relative;
+  width: 100%;
+}
 
-        .operations-section {
-          background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-          padding: 100px 0;
-          position: relative;
-          width: 100%;
-        }
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-        .container {
-          width: 80%;
-          margin: 0 auto;
-          padding: 0 20px;
-        }
+.section-header {
+  margin-bottom: 60px;
+}
 
-        .section-header {
-          margin-bottom: 60px;
-        }
+.section-title {
+  color: #36b079;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
 
-        .section-title {
-          color: #36b079;
-          font-size: 48px;
-          font-weight: 700;
-          letter-spacing: -0.02em;
-        }
+.operations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
 
-        .operations-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 80px;
-        }
+.subsection-title {
+  color: #36b079;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
 
-        .subsection-title {
-          color: #36b079;
-          font-size: 28px;
-          font-weight: 600;
-          margin-bottom: 40px;
-          letter-spacing: -0.01em;
-        }
+.timeline {
+  position: relative;
+}
 
-        .timeline {
-          position: relative;
-        }
+.timeline-item {
+  display: flex;
+  margin-bottom: 32px;
+  position: relative;
+}
 
-        .timeline-item {
-          display: flex;
-          margin-bottom: 32px;
-          position: relative;
-        }
+.timeline-marker {
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        .timeline-marker {
-          position: relative;
-          margin-right: 24px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background: #36b079;
+  border-radius: 50%;
+  border: 3px solid #1a1a1a;
+  z-index: 2;
+  position: relative;
+}
 
-        .timeline-dot {
-          width: 16px;
-          height: 16px;
-          background: #36b079;
-          border-radius: 50%;
-          border: 3px solid #1a1a1a;
-          z-index: 2;
-          position: relative;
-        }
+.timeline-line {
+  width: 2px;
+  height: 40px;
+  background: rgba(74, 222, 128, 0.3);
+  margin-top: 8px;
+}
 
-        .timeline-line {
-          width: 2px;
-          height: 40px;
-          background: rgba(74, 222, 128, 0.3);
-          margin-top: 8px;
-        }
+.timeline-content {
+  flex: 1;
+  padding-top: 2px;
+}
 
-        .timeline-content {
-          flex: 1;
-          padding-top: 2px;
-        }
+.timeline-year {
+  color: #36b079;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
 
-        .timeline-year {
-          color: #36b079;
-          font-size: 20px;
-          font-weight: 700;
-          margin-bottom: 8px;
-        }
+.timeline-event {
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+}
 
-        .timeline-event {
-          color: #e0e0e0;
-          font-size: 16px;
-          line-height: 1.5;
-          font-weight: 300;
-        }
 
-        .operations-stats {
-          margin-bottom: 40px;
-        }
 
-        .stat-card {
-          display: flex;
-          align-items: flex-start;
-          gap: 16px;
-          padding: 20px;
-          background: rgba(255, 255, 255, 0.02);
-          border-radius: 12px;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          margin-bottom: 16px;
-          transition: all 0.3s ease;
-        }
+.operations-gallery {
+  display: grid;
+  /* Default to a single column for mobile, allowing images to stack */
+  grid-template-columns: 1fr;
+  gap: 0px; /* Consistent gap between items */
+}
+.placeholder-image span{
+  color: white;
+  padding: 10px;
+}
+.gallery-item{
+  justify-content: flex-start;
+  margin-top: -40px;
+}
+/* Styles for tablets and desktops */
+@media (min-width: 768px) {
+  .operations-gallery {
+    /* Define a grid with two columns for the images.
+       The first column will be for the large horizontal image,
+       and the second column will be for the two smaller vertical images. */
+    grid-template-columns: 1fr 1fr; /* Two equal columns for the main grid */
+    grid-template-rows: auto auto; /* Two rows: one for the large image, one for the two smaller */
+    gap: 0px; /* Gap between grid items */
+  }
 
-        .stat-card:hover {
-          background: rgba(255, 255, 255, 0.05);
-          border-color: rgba(74, 222, 128, 0.3);
-          transform: translateX(5px);
-        }
+  .operations-gallery .gallery-item.large {
+    /* The large image will span both columns in the first row */
+    grid-column: 1 / -1; /* Spans from the first column line to the last */
+    grid-row: 1; /* Occupies the first row */
+  }
 
-        .stat-icon {
-          padding: 8px;
-          background: rgba(74, 222, 128, 0.1);
-          border-radius: 8px;
-          border: 1px solid rgba(74, 222, 128, 0.2);
-          flex-shrink: 0;
-        }
+  .operations-gallery .gallery-item {
+    /* Ensure all gallery items take full width of their grid cell */
+    width: 100%;
+    height: auto; /* Allow height to adjust proportionally */
+  }
 
-        .stat-content {
-          flex: 1;
-        }
+  .operations-gallery .placeholder-image {
+    /* Ensure the placeholder image container fills its space */
+    width: 100%;
+    height: 100%;
+    display: flex; /* Use flexbox for centering content within */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-        .stat-title {
-          color: #e0e0e0;
-          font-size: 18px;
-          font-weight: 600;
-          margin-bottom: 4px;
-        }
+  .operations-gallery .placeholder-image img {
+    /* Make images fill their parent container, maintaining aspect ratio */
+    width: 75%;
+    height: 75%; /* Important for vertical images to fill height */
+    object-fit: cover; /* Crop if necessary to fill the container */
+    border-radius: 8px; /* Apply rounded corners to images */
+  }
 
-        .stat-subtitle {
-          color: #b0b0b0;
-          font-size: 14px;
-          font-weight: 300;
-        }
+  /* Specific styling for the two smaller vertical images */
+  .operations-gallery .gallery-item:not(.large) {
+    /* These items will naturally flow into the second row, side-by-side
+       due to the grid-template-columns definition. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
 
-        .operations-gallery {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 16px;
-        }
+  /* If you want the two smaller images to be side-by-side under the large one,
+     and the large one to be truly "horizontal" and wide, you might need to
+     adjust the grid definition slightly or explicitly place them.
+     Given your current HTML structure, they will naturally flow into the next
+     available grid cells. To ensure they are side-by-side, the main grid
+     needs to have enough columns, and the large image needs to span them. */
+}
 
-        .gallery-item.large {
-          grid-column: 1 / -1;
-        }
-
-        .placeholder-image {
-          background: rgba(255, 255, 255, 0.02);
-          border: 1px solid rgba(255, 255, 255, 0.1);
-          border-radius: 12px;
-          padding: 32px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          min-height: 120px;
-          transition: all 0.3s ease;
-        }
-
-        .gallery-item.large .placeholder-image {
-          min-height: 160px;
-        }
-
-        .placeholder-image:hover {
-          background: rgba(255, 255, 255, 0.05);
-          border-color: rgba(74, 222, 128, 0.3);
-        }
-
-        .placeholder-image span {
-          color: #b0b0b0;
-          font-size: 14px;
-          font-weight: 400;
-          margin-top: 12px;
-        }
-
-        @media (max-width: 1024px) {
-          .operations-grid {
-            grid-template-columns: 1fr;
-            gap: 60px;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .operations-section {
-            padding: 80px 0;
-          }
-
-          .section-title {
-            font-size: 36px;
-          }
-
-          .subsection-title {
-            font-size: 24px;
-          }
-
-          .timeline-item {
-            margin-bottom: 24px;
-          }
-
-          .operations-gallery {
-            grid-template-columns: 1fr;
-          }
-
-          .gallery-item.large {
-            grid-column: 1;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .container {
-            padding: 0 15px;
-          }
-
-          .section-title {
-            font-size: 32px;
-          }
-
-          .timeline-marker {
-            margin-right: 16px;
-          }
-
-          .stat-card {
-            padding: 16px;
-          }
-        }
+/* Further adjustments for very small screens if necessary */
+@media (max-width: 480px) {
+  .operations-gallery {
+    gap: 15px; /* Slightly smaller gap on very small screens */
+  }
+}
+@media (max-width: 550px) {
+  .current-operations{
+    display: none;
+  }
+  .operations-grid {
+    display: flex;
+  }
+}
